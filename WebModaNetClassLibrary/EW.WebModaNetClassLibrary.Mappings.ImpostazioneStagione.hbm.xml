@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="ImpostazioneStagione" table="ImpostazioniStagione">
+    <id name="Id" column="ID">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="Agente" column="CodiceUtente" foreign-key="none" />
+    <many-to-one name="Stagione" column="CodiceStagione" foreign-key="none" />
+    <property name="Disponibilita" />
+  </class>
+</hibernate-mapping>

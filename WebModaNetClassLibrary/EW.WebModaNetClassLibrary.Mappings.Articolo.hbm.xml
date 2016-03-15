@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Articolo" table="Articoli">
+    <id name="Codice" length="25">
+      <generator class="assigned" />
+    </id>
+    <property name="Descrizione" length="50" />
+    <many-to-one name="Stagione" column="CodiceStagione" foreign-key="none" />
+    <many-to-one name="Linea" column="CodiceLinea" foreign-key="none" />
+    <many-to-one name="Famiglia" column="CodiceFamiglia" foreign-key="none" />
+    <!--
+    <many-to-one name="Gruppo" column="CodiceGruppo" foreign-key="none" />
+    <many-to-one name="Tessuto" column="CodiceTessuto" foreign-key="none" />
+    <many-to-one name="Genere" column="CodiceGenere" foreign-key="none" />
+    -->
+
+    <!--
+      Taglie valide
+      -->
+    <property name="TagliaValida1" />
+    <property name="TagliaValida2" />
+    <property name="TagliaValida3" />
+    <property name="TagliaValida4" />
+    <property name="TagliaValida5" />
+    <property name="TagliaValida6" />
+    <property name="TagliaValida7" />
+    <property name="TagliaValida8" />
+    <property name="TagliaValida9" />
+    <property name="TagliaValida10" />
+    <property name="TagliaValida11" />
+    <property name="TagliaValida12" />
+    <property name="TagliaValida13" />
+    <property name="TagliaValida14" />
+    <property name="TagliaValida15" />
+    <property name="TagliaValida16" />
+    <property name="TagliaValida17" />
+    <property name="TagliaValida18" />
+    <property name="TagliaValida19" />
+    <property name="TagliaValida20" />
+    <property name="TagliaValida21" />
+    <property name="TagliaValida22" />
+    <property name="TagliaValida23" />
+    <property name="TagliaValida24" />
+    <property name="TagliaValida25" />
+    <property name="TagliaValida26" />
+    <property name="TagliaValida27" />
+    <property name="TagliaValida28" />
+    <property name="TagliaValida29" />
+    <property name="TagliaValida30" />
+
+    <!--
+      Varianti
+      -->
+    <bag name="Varianti">
+      <key column="CodiceArticolo" foreign-key="none" />
+      <one-to-many class="Variante" />
+    </bag>
+
+    <!--
+      Categorie
+      -->
+    <bag name="Categorie" table="ArticoliCategorie" >
+      <key column="CodiceArticolo" foreign-key="none" />
+      <many-to-many class="Categoria" foreign-key="none">
+        <column name="CodiceCategoria" />
+        <column name="IDTipoCategoria" />
+      </many-to-many>
+    </bag>
+
+    <many-to-one name="Marchio" column="CodiceMarchio" foreign-key="none" />
+    <many-to-one name="Segnataglie" column="CodiceSegnataglie" not-null="true" foreign-key="none" />
+    <property name="QuantitaConfezione" />
+    <property name="QuantitaMinima" />
+    <property name="CodiceClasseMerceologica" length="6" />
+    <property name="CodiceClasseLogistica" length="6" />
+    <property name="UnitaMisura">
+      <column name="UnitaMisura" length="2" sql-type="nchar" />
+    </property>
+    <property name="DescrizioneImmagine" length="100" />
+  </class>
+</hibernate-mapping>

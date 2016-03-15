@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Promozione" table="Promozioni">
+    <id name="Id" column="ID">
+      <generator class="identity" />
+    </id>
+
+    <property name="DescrizioneBreve" length="50" />
+    <property name="DescrizioneEstesa" />
+    <property name="DataInizioValidita" />
+    <property name="DataFineValidita" />
+    <property name="Posizione" />
+    <property name="IdTipoCategoria" />
+    <property name="CodiceCategoria" />
+    <property name="Url" />
+    <property name="NomeImmagine" />
+  </class>
+</hibernate-mapping>

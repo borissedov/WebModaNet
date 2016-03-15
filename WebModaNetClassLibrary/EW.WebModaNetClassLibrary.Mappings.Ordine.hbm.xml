@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Ordine" table="Ordini">
+    <id name="Codice" length="30">
+      <generator class="assigned" />
+    </id>
+    <property name="CodiceGestionale" length="10" />
+    <many-to-one name="Agente" column="CodiceUtente" foreign-key="none" />
+    <property name="CodiceAgente" />
+    <property name="NumeroOrdine" />
+    <property name="Data" />
+    <property name="DataInserimento" />
+    <many-to-one name="Cliente" column="CodiceCliente" foreign-key="none" />
+    <property name="IdIndirizzoConsegna" column="IDIndirizzoConsegna" />
+    <many-to-one name="Marchio" column="CodiceMarchio" not-null="true" foreign-key="none" />
+    <many-to-one name="Tipo" column="IDTipoOrdine" not-null="true" foreign-key="none" />
+    <many-to-one name="Stagione" column="CodiceStagione" foreign-key="none" />
+    <many-to-one name="Linea" column="CodiceLinea" foreign-key="none" />
+    <property name="Banca" length="50" />
+    <many-to-one name="Valuta" column="CodiceValuta" foreign-key="none" />
+    <many-to-one name="MetodoPagamento" column="CodiceMetodoPagamento" foreign-key="none" />
+    <property name="ScontoMetodoPagamento" />
+    <property name="CodiceListino" length="6" />
+    <property name="NumeroCapi" />
+    <property name="Totale" />
+    <many-to-one name="Porto" column="IDPorto" not-null="true" foreign-key="none" />
+    <many-to-one name="Trasporto" column="IDTrasporto" not-null="true" foreign-key="none" />
+    <many-to-one name="Vettore" column="IDVettore" not-null="true" foreign-key="none" />
+    <property name="Note" column="`Note`" length="4001" />
+    <many-to-one name="Stato" column="CodiceStatoOrdine" not-null="true" foreign-key="none" />
+    <property name="Online" not-null="true" />
+    <property name="DataConsegna" />
+    <property name="DataConsegnaManuale" />
+    <property name="DataUltimaConsegna" />
+    <property name="DataDecorrenza" />
+    <property name="CodicePoliticaSconti" length="6" />
+    <property name="Allegato" length="1000" />
+    <property name="RiferimentoOrdine" length="50" />
+      
+    <!--
+      Dettagli ordine
+      -->
+    <bag name="Dettagli" cascade="all-delete-orphan" inverse="true">
+      <key column="CodiceOrdine" foreign-key="none" />
+      <one-to-many class="DettaglioOrdine" />
+    </bag>
+  </class>
+</hibernate-mapping>

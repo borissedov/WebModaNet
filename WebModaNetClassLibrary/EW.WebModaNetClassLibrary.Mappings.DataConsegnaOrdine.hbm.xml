@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="DataConsegnaOrdine" table="DateConsegna">
+    <id name="Id" column="ID">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="Marchio" column="CodiceMarchio" foreign-key="none" />
+    <many-to-one name="TipoOrdine" column="CodiceTipoOrdine" foreign-key="none" />
+    <many-to-one name="Stagione" column="CodiceStagione" foreign-key="none" />
+    <many-to-one name="Linea" column="CodiceLinea" foreign-key="none" />
+    <property name="DataInizioOrdine" />
+    <property name="DataFineOrdine" />
+    <property name="DataConsegna" />
+    <property name="DataUltimaConsegna" />
+    <property name="DataDecorrenza" />
+  </class>
+</hibernate-mapping>

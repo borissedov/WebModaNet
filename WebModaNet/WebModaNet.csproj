@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DC735B5-44AA-4FBC-BC39-97AAED5CE06D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EW.WebModaNet</RootNamespace>
+    <AssemblyName>EW.WebModaNet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator.NinjectAdapter">
+      <HintPath>..\References\CommonServiceLocator.NinjectAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\References\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\References\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\References\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\References\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web">
+      <HintPath>..\References\Ninject.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agenti.aspx" />
+    <Content Include="AggiornaApplicazione.aspx" />
+    <Content Include="AggiornaDatabase.aspx" />
+    <Content Include="AreaDocumentale.aspx" />
+    <Content Include="Clienti.aspx" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\Header.ascx" />
+    <Content Include="Controls\Navigation.ascx" />
+    <Content Include="Controls\RiepilogoOrdineControl.ascx" />
+    <Content Include="CreaAggiornamenti.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Documents\allegati\DeleteMe.txt" />
+    <Content Include="Documents\cataloghi\DeleteMe.txt" />
+    <Content Include="Documents\DeleteMe.txt" />
+    <Content Include="Documents\PDfArticoli\DeleteMe.txt" />
+    <Content Include="Documents\PDF\DeleteMe.txt" />
+    <Content Include="Errors\AccessoNegato.aspx" />
+    <Content Include="Errors\Errore.aspx" />
+    <Content Include="Errors\PaginaNonTrovata.aspx" />
+    <Content Include="GestioneGeneraleImpostazioniOrdini.aspx" />
+    <Content Include="GestioneOrdini.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\32x32\checkbox-checked.png" />
+    <Content Include="Images\32x32\checkbox-empty.png" />
+    <Content Include="Images\32x32\default.png" />
+    <Content Include="Images\32x32\delete.png" />
+    <Content Include="Images\32x32\edit.png" />
+    <Content Include="Images\32x32\inactive.png" />
+    <Content Include="Images\32x32\led_green.png" />
+    <Content Include="Images\32x32\led_red.png" />
+    <Content Include="Images\32x32\led_yellow.png" />
+    <Content Include="Images\32x32\list.png" />
+    <Content Include="Images\32x32\online.png" />
+    <Content Include="Images\32x32\row_add.png" />
+    <Content Include="Images\agent-add.png" />
+    <Content Include="Images\ajaxLoader.gif" />
+    <Content Include="Images\arrow_down.png" />
+    <Content Include="Images\arrow_up.png" />
+    <Content Include="Images\Articoli\no-picture.png" />
+    <Content Include="Images\astrologer.png" />
+    <Content Include="Images\bg_button.png" />
+    <Content Include="Images\bg_divField.png" />
+    <Content Include="Images\black-square.png" />
+    <Content Include="Images\blue-square.png" />
+    <Content Include="Images\bottone_richiedi_password.png" />
+    <Content Include="Images\box.png" />
+    <Content Include="Images\checkbox-checked.png" />
+    <Content Include="Images\checkbox-empty.png" />
+    <Content Include="Images\Checkout.png" />
+    <Content Include="Images\clock_refresh.png" />
+    <Content Include="Images\copy.png" />
+    <Content Include="Images\data_refresh.png" />
+    <Content Include="Images\default.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\duplicate.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\flag_gray.png" />
+    <Content Include="Images\flag_green.png" />
+    <Content Include="Images\flag_red.png" />
+    <Content Include="Images\flag_yellow.png" />
+    <Content Include="Images\green-circle.png" />
+    <Content Include="Images\green-square.png" />
+    <Content Include="Images\hover.png" />
+    <Content Include="Images\hover_sub.png" />
+    <Content Include="Images\ico_contatti.png" />
+    <Content Include="Images\ico_indirizzo.png" />
+    <Content Include="Images\ico_legend.png" />
+    <Content Include="Images\inactive.png" />
+    <Content Include="Images\led_green.png" />
+    <Content Include="Images\led_red.png" />
+    <Content Include="Images\led_yellow.png" />
+    <Content Include="Images\list.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\Logo.jpg" />
+    <Content Include="Images\Logoldo.jpg" />
+    <Content Include="Images\Logoold1.jpg" />
+    <Content Include="Images\message.png" />
+    <Content Include="Images\mostraImg.png" />
+    <Content Include="Images\nascondiImg.png" />
+    <Content Include="Images\nyroModal\ajaxLoader.gif" />
+    <Content Include="Images\nyroModal\close.gif" />
+    <Content Include="Images\nyroModal\next.gif" />
+    <Content Include="Images\nyroModal\prev.gif" />
+    <Content Include="Images\offline.png" />
+    <Content Include="Images\online.png" />
+    <Content Include="Images\orange-square.png" />
+    <Content Include="Images\paste.png" />
+    <Content Include="Images\pdf.png" />
+    <Content Include="Images\pictures-update.png" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\red-circle.png" />
+    <Content Include="Images\red-square.png" />
+    <Content Include="Images\row_add.png" />
+    <Content Include="Images\software-update.png" />
+    <Content Include="Images\table_refresh.png" />
+    <Content Include="Images\UI\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Images\UI\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Images\UI\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Images\UI\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Images\UI\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Images\UI\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Images\UI\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Images\UI\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Images\UI\ui-icons_222222_256x240.png" />
+    <Content Include="Images\UI\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Images\UI\ui-icons_454545_256x240.png" />
+    <Content Include="Images\UI\ui-icons_888888_256x240.png" />
+    <Content Include="Images\UI\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Images\Varianti\nocolore.gif" />
+    <Content Include="Images\white-square.png" />
+    <Content Include="Images\zoom.png" />
+    <Content Include="ImpostazioniApplicazione.aspx" />
+    <Content Include="InserisciModificaAgente.aspx" />
+    <Content Include="InserisciModificaCliente.aspx" />
+    <Content Include="InserisciModificaTestata.aspx" />
+    <Content Include="InserisciNomeUtente.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Manuali\DeleteMe.txt" />
+    <Content Include="NuoviIndirizzi.aspx" />
+    <Content Include="Scripts\CompressionReadMe.txt" />
+    <Content Include="Scripts\html5.js" />
+    <Content Include="Stampa.aspx" />
+    <Content Include="TrasmissioneOrdini.aspx" />
+    <Content Include="TrasmissioneOrdiniWebService.asmx" />
+    <Content Include="UserData.xml" />
+    <Content Include="_App_Offline.htm" />
+    <Content Include="AgentiHandler.ashx" />
+    <Content Include="ArticoliHandler.ashx" />
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.12.custom.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\jquery.fixedtableheader-1-0-2.min.js" />
+    <Content Include="Scripts\jquery.nyroModal-ie6.min.js" />
+    <Content Include="Scripts\jquery.nyroModal.custom.min.js" />
+    <Content Include="Scripts\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-it.js" />
+    <Content Include="Scripts\webmoda.js" />
+    <Content Include="Styles\jquery-ui-1.8.12.custom.css" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\nyroModal.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Styles\site.altaquota.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Site_print.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Themes\SiteTheme\Controls.skin" />
+    <Content Include="ClientUpdates\Web.config" />
+    <Content Include="Errors\Web.config" />
+    <Content Include="Images\Web.config" />
+    <Content Include="Scripts\Web.config" />
+    <Content Include="ServerUpdates\Web.config" />
+    <Content Include="Styles\Web.config" />
+    <Content Include="Site.Master" />
+    <Content Include="UpdateHandler.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenti.aspx.cs">
+      <DependentUpon>Agenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentiHandler.ashx.cs">
+      <DependentUpon>AgentiHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AggiornaApplicazione.aspx.cs">
+      <DependentUpon>AggiornaApplicazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AggiornaDatabase.aspx.cs">
+      <DependentUpon>AggiornaDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AreaDocumentale.aspx.cs">
+      <DependentUpon>AreaDocumentale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticoliHandler.ashx.cs">
+      <DependentUpon>ArticoliHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticoloJson.cs" />
+    <Compile Include="Clienti.aspx.cs">
+      <DependentUpon>Clienti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\AdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\AgentPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\CacheManager.cs" />
+    <Compile Include="Code\ClientServiceUtils.cs" />
+    <Compile Include="Code\DbConnectionType.cs" />
+    <Compile Include="Code\ExtensionMethods.cs" />
+    <Compile Include="Code\ImpostazioniApplicazioneContainer.cs" />
+    <Compile Include="Code\MigrationHelper.cs" />
+    <Compile Include="Code\NHibernateHelper.cs" />
+    <Compile Include="Code\OfflinePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\ProtectedPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\ServerServiceUtils.cs" />
+    <Compile Include="Code\StringExtensions.cs" />
+    <Compile Include="Code\UpdateUtils.cs" />
+    <Compile Include="Code\Utils.cs" />
+    <Compile Include="Code\ValidationUtils.cs" />
+    <Compile Include="Code\WebConfigSettings.cs" />
+    <Compile Include="Code\WebConfigUtils.cs" />
+    <Compile Include="Code\WebModaException.cs" />
+    <Compile Include="Controls\Footer.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigation.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RiepilogoOrdineControl.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreaAggiornamenti.aspx.cs">
+      <DependentUpon>CreaAggiornamenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\AccessoNegato.aspx.cs">
+      <DependentUpon>AccessoNegato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\Errore.aspx.cs">
+      <DependentUpon>Errore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\PaginaNonTrovata.aspx.cs">
+      <DependentUpon>PaginaNonTrovata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneGeneraleImpostazioniOrdini.aspx.cs">
+      <DependentUpon>GestioneGeneraleImpostazioniOrdini.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestioneOrdini.aspx.cs">
+      <DependentUpon>GestioneOrdini.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ImpostazioniApplicazione.aspx.cs">
+      <DependentUpon>ImpostazioniApplicazione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InserisciModificaAgente.aspx.cs">
+      <DependentUpon>InserisciModificaAgente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InserisciModificaCliente.aspx.cs">
+      <DependentUpon>InserisciModificaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InserisciModificaTestata.aspx.cs">
+      <DependentUpon>InserisciModificaTestata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InserisciNomeUtente.aspx.cs">
+      <DependentUpon>InserisciNomeUtente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\WebModule.cs" />
+    <Compile Include="NuoviIndirizzi.aspx.cs">
+      <DependentUpon>NuoviIndirizzi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="ServiceEntities\AgenteListinoService.cs" />
+    <Compile Include="ServiceEntities\AgenteMetodoPagamentoService.cs" />
+    <Compile Include="ServiceEntities\AgenteService.cs" />
+    <Compile Include="ServiceEntities\AgenteValutaService.cs" />
+    <Compile Include="ServiceEntities\AggiornamentoDatabaseService.cs" />
+    <Compile Include="ServiceEntities\ArticoloCategoriaService.cs" />
+    <Compile Include="ServiceEntities\ArticoloImballoService.cs" />
+    <Compile Include="ServiceEntities\ArticoloService.cs" />
+    <Compile Include="ServiceEntities\CategoriaService.cs" />
+    <Compile Include="ServiceEntities\ClienteResponseService.cs" />
+    <Compile Include="ServiceEntities\ClienteService.cs" />
+    <Compile Include="ServiceEntities\CodiceABarreService.cs" />
+    <Compile Include="ServiceEntities\CondizioneCommercialeService.cs" />
+    <Compile Include="ServiceEntities\DataConsegnaService.cs" />
+    <Compile Include="ServiceEntities\DettaglioOrdineService.cs" />
+    <Compile Include="ServiceEntities\DettaglioPoliticaScontiService.cs" />
+    <Compile Include="ServiceEntities\EsitoTrasmissioneService.cs" />
+    <Compile Include="ServiceEntities\FamigliaService.cs" />
+    <Compile Include="ServiceEntities\ImballoService.cs" />
+    <Compile Include="ServiceEntities\ImpostazioneApplicazioneService.cs" />
+    <Compile Include="ServiceEntities\ImpostazioneOrdineService.cs" />
+    <Compile Include="ServiceEntities\ImpostazioneStagioneService.cs" />
+    <Compile Include="ServiceEntities\IndirizzoService.cs" />
+    <Compile Include="ServiceEntities\LineaService.cs" />
+    <Compile Include="ServiceEntities\LinguaService.cs" />
+    <Compile Include="ServiceEntities\ListinoClienteService.cs" />
+    <Compile Include="ServiceEntities\ListinoService.cs" />
+    <Compile Include="ServiceEntities\MarchioService.cs" />
+    <Compile Include="ServiceEntities\MetodoPagamentoService.cs" />
+    <Compile Include="ServiceEntities\NazioneService.cs" />
+    <Compile Include="ServiceEntities\OrdineResponseService.cs" />
+    <Compile Include="ServiceEntities\OrdineService.cs" />
+    <Compile Include="ServiceEntities\PoliticaScontiService.cs" />
+    <Compile Include="ServiceEntities\PortoService.cs" />
+    <Compile Include="ServiceEntities\PromozioneService.cs" />
+    <Compile Include="ServiceEntities\ProvinciaService.cs" />
+    <Compile Include="ServiceEntities\SegnataglieService.cs" />
+    <Compile Include="ServiceEntities\StagioneService.cs" />
+    <Compile Include="ServiceEntities\StatoClienteService.cs" />
+    <Compile Include="ServiceEntities\StatoOrdineService.cs" />
+    <Compile Include="ServiceEntities\StatoTrasmissioneService.cs" />
+    <Compile Include="ServiceEntities\TipoAgenteService.cs" />
+    <Compile Include="ServiceEntities\TipoCategoriaService.cs" />
+    <Compile Include="ServiceEntities\TipoOrdineService.cs" />
+    <Compile Include="ServiceEntities\TrasmissioneOrdiniRequestService.cs" />
+    <Compile Include="ServiceEntities\TrasmissioneOrdiniResponseService.cs" />
+    <Compile Include="ServiceEntities\TrasportoService.cs" />
+    <Compile Include="ServiceEntities\ValutaService.cs" />
+    <Compile Include="ServiceEntities\VarianteService.cs" />
+    <Compile Include="ServiceEntities\VettoreService.cs" />
+    <Compile Include="ServiceEntities\VisibilitaClienteService.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stampa.aspx.cs">
+      <DependentUpon>Stampa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="TrasmissioneOrdini.aspx.cs">
+      <DependentUpon>TrasmissioneOrdini.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrasmissioneOrdiniReference\ClienteResponseService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\ClienteService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\DettaglioOrdineService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\EsitoTrasmissioneService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\GetMD5AppCompletedEventArgs.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\GetMD5AppCompletedEventHandler.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\GetMD5DBCompletedEventArgs.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\GetMD5DBCompletedEventHandler.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\GetMD5ImgCompletedEventArgs.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\GetMD5ImgCompletedEventHandler.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\IndirizzoService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\OrdineResponseService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\OrdineService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\StatoTrasmissioneService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\TrasmettiCompletedEventArgs.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\TrasmettiCompletedEventHandler.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\TrasmissioneOrdiniRequestService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\TrasmissioneOrdiniResponseService.cs" />
+    <Compile Include="TrasmissioneOrdiniReference\TrasmissioneOrdiniWebService.cs" />
+    <Compile Include="TrasmissioneOrdiniWebService.asmx.cs">
+      <DependentUpon>TrasmissioneOrdiniWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UpdateHandler.ashx.cs">
+      <DependentUpon>UpdateHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="VarianteImballo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebModaNetClassLibrary\WebModaNetClassLibrary.csproj">
+      <Project>{89ba6a92-f260-4389-84aa-48e0315fe0fc}</Project>
+      <Name>WebModaNetClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Resources.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Resources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24972</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24475/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

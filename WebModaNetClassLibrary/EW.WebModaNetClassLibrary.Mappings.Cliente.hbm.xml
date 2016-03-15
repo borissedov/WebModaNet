@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Cliente" table="Clienti">
+    <id name="Codice" length="26">
+      <generator class="assigned" />
+    </id>
+    <many-to-one name="Agente" column="CodiceUtente" foreign-key="none" />
+    <property name="CodiceGestionale" length="10" />
+    <property name="CodiceAgente" />
+    <property name="RagioneSociale1" length="30" />
+    <property name="RagioneSociale2" length="30" />
+    <property name="PartitaIva" length="12" />
+    <property name="CodiceFiscale" length="25" />
+    <property name="Attivo" />
+    <many-to-one name="Stato" column="CodiceStatoCliente" foreign-key="none" />
+    <property name="Rating" />
+    <property name="Insoluto" />
+    <property name="Telefono" length="20" />
+    <property name="Cellulare" length="20" />
+    <property name="Fax" length="20" />
+    <property name="Email" length="200" />
+    <property name="Referente" length="30" />
+    <property name="Banca" length="50" />
+    <property name="Abi" />
+    <property name="Cab" />
+    <property name="Iban" length="50" />
+    <many-to-one name="MetodoPagamentoPredefinito" column="CodiceMetodoPagamentoPredefinito" foreign-key="none" />
+    <many-to-one name="ValutaPredefinita" column="CodiceValutaPredefinita" foreign-key="none" />
+    <many-to-one name="PortoPredefinito" column="IDPortoPredefinito" foreign-key="none" />
+    <many-to-one name="TrasportoPredefinito" column="IDTrasportoPredefinito" foreign-key="none" />
+    <many-to-one name="VettorePredefinito" column="IDVettorePredefinito" foreign-key="none" />
+    <property name="CodiceListinoPredefinito" length="6" />
+    <property name="CodicePoliticaSconti" length="6" />
+    <property name="CodiceTipologiaCommerciale" length="6" />
+    <property name="CodiceCategoria" length="6" />
+    <property name="CodiceZona" length="6" />
+    <property name="CodiceSituazione" />
+
+    <property name="IdCommerciale" />
+    <property name="DescrizioneCommerciale" length="30" />
+    <property name="EmailCommerciale" length="200" />
+    <property name="TelCommerciale" length="20" />
+    <property name="TelCommerciale2" length="20" />
+
+    <!--
+      Indirizzo sede legale
+      -->
+    <property name="ViaSedeLegale1" column="ViaSedeLegale1" length="35" />
+    <property name="ViaSedeLegale2" column="ViaSedeLegale2" length="35" />
+    <property name="CapSedeLegale" column="CapSedeLegale" length="10" />
+    <property name="CittaSedeLegale1" column="CittaSedeLegale1" length="25" />
+    <property name="CittaSedeLegale2" column="CittaSedeLegale2" length="25" />
+    <many-to-one name="ProvinciaSedeLegale" column="CodiceProvinciaSedeLegale" foreign-key="none" not-found="ignore" />
+    <many-to-one name="NazioneSedeLegale" column="NazioneSedeLegale" foreign-key="none" not-found="ignore" />
+
+    <!--
+    Indirizzi
+    -->
+    <bag name="Indirizzi" cascade="all-delete-orphan">
+      <key column="CodiceCliente" foreign-key="none" />
+      <one-to-many class="Indirizzo" />
+    </bag>
+  </class>
+</hibernate-mapping>

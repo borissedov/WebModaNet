@@ -1,0 +1,7 @@
+.vs/config/applicationhost.config
+WebModaNet/Logs/
+WebModaNet/obj/
+WebModaNet/bin/
+packages/
+WebModaNetClassLibrary/obj/
+WebModaNetClassLibrary/bin/

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Indirizzo" table="Indirizzi">
+    <composite-id>
+      <key-property name="Id" column="ID" />
+      <key-many-to-one name="Cliente" column="CodiceCliente" foreign-key="none" />
+    </composite-id>
+    <property name="RagioneSociale1" length="30" />
+    <property name="RagioneSociale2" length="30" />
+    <property name="Via1" length="35" />
+    <property name="Via2" length="35" />
+    <property name="Cap" length="10" />
+    <property name="Citta1" length="25" />
+    <property name="Citta2" length="25" />
+    <many-to-one name="Provincia" column="CodiceProvincia" foreign-key="none" not-found="ignore" />
+    <many-to-one name="Nazione" column="CodiceNazione" foreign-key="none" not-found="ignore" />
+    <property name="Predefinito" />
+    <property name="Nuovo" />
+  </class>
+</hibernate-mapping>

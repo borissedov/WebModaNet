@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Segnataglie">
+    <id name="Codice" length="6">
+      <generator class="assigned" />
+    </id>
+    
+    <!--
+      Taglie
+      -->
+    <property name="Taglia1" length="6" />
+    <property name="Taglia2" length="6" />
+    <property name="Taglia3" length="6" />
+    <property name="Taglia4" length="6" />
+    <property name="Taglia5" length="6" />
+    <property name="Taglia6" length="6" />
+    <property name="Taglia7" length="6" />
+    <property name="Taglia8" length="6" />
+    <property name="Taglia9" length="6" />
+    <property name="Taglia10" length="6" />
+    <property name="Taglia11" length="6" />
+    <property name="Taglia12" length="6" />
+    <property name="Taglia13" length="6" />
+    <property name="Taglia14" length="6" />
+    <property name="Taglia15" length="6" />
+    <property name="Taglia16" length="6" />
+    <property name="Taglia17" length="6" />
+    <property name="Taglia18" length="6" />
+    <property name="Taglia19" length="6" />
+    <property name="Taglia20" length="6" />
+    <property name="Taglia21" length="6" />
+    <property name="Taglia22" length="6" />
+    <property name="Taglia23" length="6" />
+    <property name="Taglia24" length="6" />
+    <property name="Taglia25" length="6" />
+    <property name="Taglia26" length="6" />
+    <property name="Taglia27" length="6" />
+    <property name="Taglia28" length="6" />
+    <property name="Taglia29" length="6" />
+    <property name="Taglia30" length="6" />
+  </class>
+</hibernate-mapping>

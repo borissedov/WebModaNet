@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Categoria" table="Categorie">
+    <composite-id>
+      <key-property name="Codice" length="6" />
+      <key-many-to-one name="Tipo" column="IDTipoCategoria" foreign-key="none" />
+    </composite-id>
+    <property name="Descrizione" length="35" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Listino" table="Listini">
+    <composite-id>
+      <key-property name="Codice" length="6" />
+      <key-many-to-one name="Articolo" column="CodiceArticolo" foreign-key="none" />
+      <key-property name="CodiceVariante" length="50" />
+      <key-property name="DataInizioValidita" />
+      <key-property name="DataFineValidita" />
+    </composite-id>
+
+    <!--
+      Prezzi
+      -->
+    <property name="Prezzo1" />
+    <property name="Prezzo2" />
+    <property name="Prezzo3" />
+    <property name="Prezzo4" />
+    <property name="Prezzo5" />
+    <property name="Prezzo6" />
+    <property name="Prezzo7" />
+    <property name="Prezzo8" />
+    <property name="Prezzo9" />
+    <property name="Prezzo10" />
+    <property name="Prezzo11" />
+    <property name="Prezzo12" />
+    <property name="Prezzo13" />
+    <property name="Prezzo14" />
+    <property name="Prezzo15" />
+    <property name="Prezzo16" />
+    <property name="Prezzo17" />
+    <property name="Prezzo18" />
+    <property name="Prezzo19" />
+    <property name="Prezzo20" />
+    <property name="Prezzo21" />
+    <property name="Prezzo22" />
+    <property name="Prezzo23" />
+    <property name="Prezzo24" />
+    <property name="Prezzo25" />
+    <property name="Prezzo26" />
+    <property name="Prezzo27" />
+    <property name="Prezzo28" />
+    <property name="Prezzo29" />
+    <property name="Prezzo30" />
+    
+    <!--
+      Sconti
+      -->
+    <property name="Sconto1" />
+    <property name="Sconto2" />
+    <property name="Sconto3" />
+    <property name="Sconto4" />
+    <property name="Sconto5" />
+  </class>
+</hibernate-mapping>

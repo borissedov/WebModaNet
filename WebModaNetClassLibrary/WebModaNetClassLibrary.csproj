@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89BA6A92-F260-4389-84AA-48E0315FE0FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EW.WebModaNetClassLibrary</RootNamespace>
+    <AssemblyName>EW.WebModaNetClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\References\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Agente.cs" />
+    <Compile Include="Entities\AggiornamentoDatabase.cs" />
+    <Compile Include="Entities\Articolo.cs" />
+    <Compile Include="Entities\ArticoloCategoria.cs" />
+    <Compile Include="Entities\ArticoloImballo.cs" />
+    <Compile Include="Entities\Categoria.cs" />
+    <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\CodiceABarre.cs" />
+    <Compile Include="Entities\CondizioneCommerciale.cs" />
+    <Compile Include="Entities\DataConsegnaOrdine.cs" />
+    <Compile Include="Entities\DettaglioDateConsegna.cs" />
+    <Compile Include="Entities\DettaglioOrdine.cs" />
+    <Compile Include="Entities\DettaglioOrdineRiepilogo.cs" />
+    <Compile Include="Entities\DettaglioPoliticaSconti.cs" />
+    <Compile Include="Entities\Documento.cs" />
+    <Compile Include="Entities\Famiglia.cs" />
+    <Compile Include="Entities\Gruppo.cs" />
+    <Compile Include="Entities\Imballo.cs" />
+    <Compile Include="Entities\ImmagineArticolo.cs" />
+    <Compile Include="Entities\ImpostazioneApplicazione.cs" />
+    <Compile Include="Entities\ImpostazioneOrdine.cs" />
+    <Compile Include="Entities\ImpostazioneStagione.cs" />
+    <Compile Include="Entities\Indirizzo.cs" />
+    <Compile Include="Entities\Linea.cs" />
+    <Compile Include="Entities\Lingua.cs" />
+    <Compile Include="Entities\Listino.cs" />
+    <Compile Include="Entities\ListinoCliente.cs" />
+    <Compile Include="Entities\ListinoVariante.cs" />
+    <Compile Include="Entities\Marchio.cs" />
+    <Compile Include="Entities\MetodoPagamento.cs" />
+    <Compile Include="Entities\Nazione.cs" />
+    <Compile Include="Entities\OrderByClause_T_.cs" />
+    <Compile Include="Entities\Ordine.cs" />
+    <Compile Include="Entities\PoliticaSconti.cs" />
+    <Compile Include="Entities\Porto.cs" />
+    <Compile Include="Entities\PrezzoLista.cs" />
+    <Compile Include="Entities\Promozione.cs" />
+    <Compile Include="Entities\Provincia.cs" />
+    <Compile Include="Entities\RiepilogoOrdine.cs" />
+    <Compile Include="Entities\Segnataglie.cs" />
+    <Compile Include="Entities\Stagione.cs" />
+    <Compile Include="Entities\StatoCliente.cs" />
+    <Compile Include="Entities\StatoOrdine.cs" />
+    <Compile Include="Entities\TagliaInfo.cs" />
+    <Compile Include="Entities\Tessuto.cs" />
+    <Compile Include="Entities\TipoAgente.cs" />
+    <Compile Include="Entities\TipoCategoria.cs" />
+    <Compile Include="Entities\TipoOrdine.cs" />
+    <Compile Include="Entities\Trasporto.cs" />
+    <Compile Include="Entities\Valuta.cs" />
+    <Compile Include="Entities\Variante.cs" />
+    <Compile Include="Entities\Vettore.cs" />
+    <Compile Include="Entities\VisibilitaCliente.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IAgenteRepository.cs" />
+    <Compile Include="Repositories\IAggiornamentoDatabaseRepository.cs" />
+    <Compile Include="Repositories\IArticoloRepository.cs" />
+    <Compile Include="Repositories\ICategoriaRepository.cs" />
+    <Compile Include="Repositories\IClienteRepository.cs" />
+    <Compile Include="Repositories\ICondizioneCommercialeRepository.cs" />
+    <Compile Include="Repositories\IDataConsegnaOrdineRepository.cs" />
+    <Compile Include="Repositories\IDettaglioOrdineRepository.cs" />
+    <Compile Include="Repositories\IDocumentoRepository.cs" />
+    <Compile Include="Repositories\IFamigliaRepository.cs" />
+    <Compile Include="Repositories\IImballoRepository.cs" />
+    <Compile Include="Repositories\IImpostazioneApplicazioneRepository.cs" />
+    <Compile Include="Repositories\IIndirizzoRepository.cs" />
+    <Compile Include="Repositories\ILineaRepository.cs" />
+    <Compile Include="Repositories\IListinoRepository.cs" />
+    <Compile Include="Repositories\IOrdineRepository.cs" />
+    <Compile Include="Repositories\IPromozioneRepository.cs" />
+    <Compile Include="Repositories\IRepository_TEntity, TKey_.cs" />
+    <Compile Include="Repositories\IStagioneRepository.cs" />
+    <Compile Include="Repositories\NHibernateAgenteRepository.cs" />
+    <Compile Include="Repositories\NHibernateAggiornamentoDatabaseRepository.cs" />
+    <Compile Include="Repositories\NHibernateArticoloRepository.cs" />
+    <Compile Include="Repositories\NHibernateBaseRepository_TEntity, TKey_.cs" />
+    <Compile Include="Repositories\NHibernateCategoriaRepository.cs" />
+    <Compile Include="Repositories\NHibernateClienteRepository.cs" />
+    <Compile Include="Repositories\NHibernateCondizioneCommercialeRepository.cs" />
+    <Compile Include="Repositories\NHibernateDataConsegnaOrdineRepository.cs" />
+    <Compile Include="Repositories\NHibernateDettaglioOrdineRepository.cs" />
+    <Compile Include="Repositories\NHibernateDocumentoRepository.cs" />
+    <Compile Include="Repositories\NHibernateFamigliaRepository.cs" />
+    <Compile Include="Repositories\NHibernateGenericRepository_TEntity, TKey_.cs" />
+    <Compile Include="Repositories\NHibernateImballoRepository.cs" />
+    <Compile Include="Repositories\NHibernateImpostazioneApplicazioneRepository.cs" />
+    <Compile Include="Repositories\NHibernateIndirizzoRepository.cs" />
+    <Compile Include="Repositories\NHibernateLineaRepository.cs" />
+    <Compile Include="Repositories\NHibernateListinoRepository.cs" />
+    <Compile Include="Repositories\NHibernateOrdineRepository.cs" />
+    <Compile Include="Repositories\NHibernatePromozioneRepository.cs" />
+    <Compile Include="Repositories\NHibernateStagioneRepository.cs" />
+    <Compile Include="Utils\LogLevel.cs" />
+    <Compile Include="Utils\LogUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Agente.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Articolo.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.ArticoloCategoria.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.ArticoloImballo.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Categoria.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Cliente.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.CodiceABarre.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.CondizioneCommerciale.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.DataConsegnaOrdine.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.DettaglioOrdine.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.DettagliPoliticaSconti.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Documento.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Famiglia.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Imballo.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.ImpostazioneApplicazione.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.ImpostazioneOrdine.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.ImpostazioneStagione.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Indirizzo.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Linea.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Lingua.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Listino.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.ListinoCliente.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Marchio.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.MetodoPagamento.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Nazione.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Ordine.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.PoliticaSconti.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Porto.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Promozione.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Provincia.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Segnataglie.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Stagione.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.StatoCliente.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.StatoOrdine.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.TipoAgente.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.TipoCategoria.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.TipoOrdine.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Trasporto.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Valuta.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Variante.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.Vettore.hbm.xml" />
+    <EmbeddedResource Include="EW.WebModaNetClassLibrary.Mappings.VisibilitaCliente.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

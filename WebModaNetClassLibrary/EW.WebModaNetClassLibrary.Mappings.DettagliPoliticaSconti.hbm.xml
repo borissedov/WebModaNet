@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="DettaglioPoliticaSconti" table="DettagliPoliticaSconti">
+    <id name="Id" column="ID">
+      <generator class="identity" />
+    </id>
+    <property name="Codice" length="6" />
+    <property name="Criterio" />
+    <property name="DataDecorrenza" />
+    <property name="DataScadenza" />
+    <property name="Priorita" />
+    <property name="Progressivo" />
+    <property name="Descrizione" length="80" />
+    
+    <!--
+      Flag
+      -->
+    <property name="CodiceArticolo" length="25" />
+    <property name="CodiceFamiglia" length="6" />
+    <property name="CodiceMarchio" length="6" />
+    <property name="CodiceListino" length="6" />
+    <property name="CodiceTipologiaCommerciale" length="6" />
+    <property name="CodiceCliente" length="26" />
+    <property name="CodiceCategoriaCliente" length="6" />
+    <property name="CodiceZona" length="6" />
+    <property name="CodiceMetodoPagamento" length="6" />
+    <property name="CodiceClasseMerceologica" length="6" />
+    <property name="CodiceClasseLogistica" length="6" />
+
+    <!--
+      Sconti
+      -->
+    <property name="Sconto1" />
+    <property name="Sconto2" />
+    <property name="Sconto3" />
+    <property name="Sconto4" />
+    <property name="Sconto5" />
+  </class>
+</hibernate-mapping>

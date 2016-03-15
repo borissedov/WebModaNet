@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Agente" table="Agenti">
+    <id name="CodiceUtente" length="10">
+      <generator class="assigned" />
+    </id>
+    <property name="CodiceAgente" not-null="true" />
+    <property name="RagioneSociale" length="50" not-null="true" />
+    <property name="Password" column="`Password`" length="10" not-null="true" />
+    <many-to-one name="Tipo" column="CodiceTipoAgente" not-null="true" foreign-key="none" />
+    <property name="Attivo" not-null="true" />
+    <property name="Online" />
+    <property name="DataUltimoAccesso" />
+    <property name="DataUltimaOperazione" />
+    <many-to-one name="Nazione" column="CodiceNazione" not-null="true" foreign-key="none" />
+    <many-to-one name="Lingua" column="CodiceLingua" not-null="true" foreign-key="none" />
+
+    <!--
+      Codici listino
+      -->
+    <bag name="CodiciListino" table="AgentiListini" cascade="all-delete-orphan">
+      <key column="CodiceUtente" foreign-key="none" />
+      <element column="CodiceListino" length="6" />
+    </bag>
+
+    <property name="CodiceListinoPredefinito" length="6" /><!--not-null-->
+
+    <!--
+      Metodi di pagamento
+      -->
+    <bag name="MetodiPagamento" table="AgentiMetodiPagamento">
+      <key column="CodiceUtente" foreign-key="none" />
+      <many-to-many column="CodiceMetodoPagamento" class="MetodoPagamento" foreign-key="none" />
+    </bag>
+
+    <many-to-one name="MetodoPagamentoPredefinito" column="CodiceMetodoPagamentoPredefinito" foreign-key="none" /><!--not-null-->
+
+    <!--
+      Valute
+      -->
+    <bag name="Valute" table="AgentiValute">
+      <key column="CodiceUtente" foreign-key="none" />
+      <many-to-many column="CodiceValuta" class="Valuta" foreign-key="none" />
+    </bag>
+
+    <many-to-one name="ValutaPredefinita" column="CodiceValutaPredefinita" foreign-key="none" /><!--not-null-->
+
+    <!--
+      Ordini
+      -->
+    <bag name="Ordini">
+      <key column="CodiceUtente" foreign-key="none" />
+      <one-to-many class="Ordine" />
+    </bag>
+
+    <!--
+      Impostazioni ordine
+      -->
+    <bag name="ImpostazioniOrdine" cascade="all-delete-orphan">
+      <key column="CodiceUtente" foreign-key="none" />
+      <one-to-many class="ImpostazioneOrdine" />
+    </bag>
+    
+    <!--
+      Impostazioni stagioni
+      -->
+    <bag name="ImpostazioniStagione" cascade="all-delete-orphan">
+      <key column="CodiceUtente" foreign-key="none" />
+      <one-to-many class="ImpostazioneStagione" />
+    </bag>
+
+    <!--
+      Visibilita Cliente
+      -->
+    <bag name="VisibilitaCliente" inverse="true">
+      <key column="CodiceAgente" property-ref="CodiceAgente" />
+      <one-to-many class="VisibilitaCliente" />
+    </bag>
+
+    <property name="NumeroDecimali" />
+    <property name="CodicePoliticaSconti" length="6" />
+    <property name="UtilizzaOffline" />
+    
+    <property name="MostraDisponibilitaIcona" />
+    
+    <!--
+      Blocchi
+      -->
+    <property name="BloccoMetodoPagamento" />
+    <property name="BloccoBanca" />
+    <property name="BloccoValuta" />
+    <property name="BloccoPorto" />
+    <property name="BloccoTrasporto" />
+    <property name="BloccoVettore" />
+    <property name="BloccoDataOrdine" />
+    <property name="BloccoDateConsegna" />
+  </class>
+</hibernate-mapping>

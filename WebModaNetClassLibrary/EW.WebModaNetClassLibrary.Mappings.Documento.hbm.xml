@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Documento" table="Documenti">
+    <id name="Id" column="ID">
+      <generator class="identity" />
+    </id>
+    <property name="Titolo" length="50" not-null="true" />
+    <property name="Descrizione" length="255" />
+    <property name="NomeFile" length="255" not-null="true" />
+    <property name="DataScadenza" />
+    <property name="Tipo" length="50" />
+    <many-to-one name="Agente" column="CodiceUtente" foreign-key="none" not-null="true" />
+    <many-to-one name="Cliente" column="CodiceCliente" foreign-key="none" />
+    <many-to-one name="Stagione" column="CodiceStagione" foreign-key="none" />
+    <many-to-one name="Linea" column="CodiceLinea" foreign-key="none" />
+  </class>
+</hibernate-mapping>

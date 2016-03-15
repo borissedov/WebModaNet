@@ -1,0 +1,1532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abi" xml:space="preserve">
+    <value>ABI</value>
+  </data>
+  <data name="AccessoNegato" xml:space="preserve">
+    <value>Accesso negato</value>
+  </data>
+  <data name="AggiungiIndirizzo" xml:space="preserve">
+    <value>Aggiungi indirizzo</value>
+  </data>
+  <data name="Amministrazione" xml:space="preserve">
+    <value>Amministrazione</value>
+  </data>
+  <data name="AnteprimaLogo" xml:space="preserve">
+    <value>Anteprima logo</value>
+  </data>
+  <data name="Articoli" xml:space="preserve">
+    <value>Articoli</value>
+  </data>
+  <data name="Articolo" xml:space="preserve">
+    <value>Articolo</value>
+  </data>
+  <data name="Attivo" xml:space="preserve">
+    <value>Attivo</value>
+  </data>
+  <data name="Banca" xml:space="preserve">
+    <value>Banca</value>
+  </data>
+  <data name="Benvenuto" xml:space="preserve">
+    <value>Benvenuto</value>
+  </data>
+  <data name="Cab" xml:space="preserve">
+    <value>CAB</value>
+  </data>
+  <data name="Cap" xml:space="preserve">
+    <value>CAP</value>
+  </data>
+  <data name="CatalogoProdotti" xml:space="preserve">
+    <value>Catalogo prodotti</value>
+  </data>
+  <data name="Cerca" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
+  <data name="CercaPerCodice" xml:space="preserve">
+    <value>Cerca per codice</value>
+  </data>
+  <data name="ChiudiOrdine" xml:space="preserve">
+    <value>Chiudi ordine</value>
+  </data>
+  <data name="Citta" xml:space="preserve">
+    <value>Città</value>
+  </data>
+  <data name="Cliente" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="Clienti" xml:space="preserve">
+    <value>Clienti</value>
+  </data>
+  <data name="Codice" xml:space="preserve">
+    <value>Codice</value>
+  </data>
+  <data name="CodiceAgente" xml:space="preserve">
+    <value>Codice agente</value>
+  </data>
+  <data name="CodiceArticoloBarcode" xml:space="preserve">
+    <value>Codice articolo/a barre</value>
+  </data>
+  <data name="CodiceCliente" xml:space="preserve">
+    <value>Codice cliente</value>
+  </data>
+  <data name="CodiceDitta" xml:space="preserve">
+    <value>Codice ditta</value>
+  </data>
+  <data name="CodiceFiscale" xml:space="preserve">
+    <value>Codice fiscale</value>
+  </data>
+  <data name="CodiceGestionale" xml:space="preserve">
+    <value>Codice gestionale</value>
+  </data>
+  <data name="CodiceUtente" xml:space="preserve">
+    <value>Codice utente</value>
+  </data>
+  <data name="Conferma" xml:space="preserve">
+    <value>Conferma</value>
+  </data>
+  <data name="ConfermaCliente" xml:space="preserve">
+    <value>Conferma cliente</value>
+  </data>
+  <data name="ConfermaIndirizzo" xml:space="preserve">
+    <value>Conferma indirizzo di consegna</value>
+  </data>
+  <data name="ConfermaSalvaCliente" xml:space="preserve">
+    <value>Sei sicuro di voler confermare? I dati non saranno più modificabili.</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DataConsegna" xml:space="preserve">
+    <value>Data consegna</value>
+  </data>
+  <data name="DataDecorrenza" xml:space="preserve">
+    <value>Data decorrenza</value>
+  </data>
+  <data name="DataFine" xml:space="preserve">
+    <value>Data fine</value>
+  </data>
+  <data name="DataInizio" xml:space="preserve">
+    <value>Data inizio</value>
+  </data>
+  <data name="DataOggi" xml:space="preserve">
+    <value>Oggi è</value>
+  </data>
+  <data name="DataUltimaConsegna" xml:space="preserve">
+    <value>Data ultima consegna</value>
+  </data>
+  <data name="DateConsegna" xml:space="preserve">
+    <value>Date di consegna</value>
+  </data>
+  <data name="DatiCliente" xml:space="preserve">
+    <value>Dati cliente</value>
+  </data>
+  <data name="Disponibilita" xml:space="preserve">
+    <value>Disponibilità</value>
+  </data>
+  <data name="Duplica" xml:space="preserve">
+    <value>Duplica</value>
+  </data>
+  <data name="Elaborato" xml:space="preserve">
+    <value>Elaborato</value>
+  </data>
+  <data name="Elenco" xml:space="preserve">
+    <value>Elenco</value>
+  </data>
+  <data name="ElencoAgenti" xml:space="preserve">
+    <value>Elenco utenti</value>
+  </data>
+  <data name="ElencoClienti" xml:space="preserve">
+    <value>Elenco clienti</value>
+  </data>
+  <data name="ElencoOrdini" xml:space="preserve">
+    <value>Elenco ordini</value>
+  </data>
+  <data name="Elimina" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="EliminaAgente" xml:space="preserve">
+    <value>Elimina agente</value>
+  </data>
+  <data name="EliminaOrdine" xml:space="preserve">
+    <value>Elimina ordine</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Errore" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="ErroreAccessoNegato" xml:space="preserve">
+    <value>Non disponi dei diritti necessari per visualizzare la pagina.</value>
+  </data>
+  <data name="ErroreAgenteNonAttivo" xml:space="preserve">
+    <value>Agente non attivo</value>
+  </data>
+  <data name="ErroreArticoloNonTrovato" xml:space="preserve">
+    <value>Nessun articolo trovato</value>
+  </data>
+  <data name="ErroreCampoObbligatorio" xml:space="preserve">
+    <value>Il campo "{0}" è obbligatorio</value>
+  </data>
+  <data name="ErroreClienteNonAttivo" xml:space="preserve">
+    <value>Il cliente "{0}" non è attivo, si prega di contattare l'ufficio commerciale.</value>
+  </data>
+  <data name="ErroreClienteNonTrovato" xml:space="preserve">
+    <value>Il cliente con il codice "{0}" non è stato trovato</value>
+  </data>
+  <data name="ErroreCodiceArticolo" xml:space="preserve">
+    <value>Inserisci un codice articolo o un codice a barre</value>
+  </data>
+  <data name="ErroreCodiceEsistente" xml:space="preserve">
+    <value>Codice già esistente</value>
+  </data>
+  <data name="ErroreCodiceOrdineNonTrovato" xml:space="preserve">
+    <value>Nessun codice ordine trovato.</value>
+  </data>
+  <data name="ErroreDataNonValida" xml:space="preserve">
+    <value>Il campo "{0}" deve essere una data valida nel formato "gg/mm/aaaa"</value>
+  </data>
+  <data name="ErroreDateConsegna" xml:space="preserve">
+    <value>Non sono presenti date di consegna valide per le impostazioni attuali dell'ordine.</value>
+  </data>
+  <data name="ErroreDateConsegnaDettaglio" xml:space="preserve">
+    <value>Non sono presenti date di consegna valide per il tipo di ordine "{0}", la stagione "{1}" e la linea "{2}" relative alla data "{3:d}" inserita.</value>
+  </data>
+  <data name="ErroreDateConsegnaTestata" xml:space="preserve">
+    <value>Non sono presenti date di consegna valide per il tipo di ordine "{0}" relative alla data "{2:d}" inserita.</value>
+  </data>
+  <data name="ErroreDimensioneLogo" xml:space="preserve">
+    <value>Dimensione del logo troppo grande</value>
+  </data>
+  <data name="ErroreEmailNonValida" xml:space="preserve">
+    <value>Il campo "{0}" non contiene un indirizzo e-mail valido</value>
+  </data>
+  <data name="ErroreEstensioneNonValida" xml:space="preserve">
+    <value>Estensione non valida</value>
+  </data>
+  <data name="ErroreGenerico" xml:space="preserve">
+    <value>Si è verificato un errore.</value>
+  </data>
+  <data name="ErroreIndirizziCliente" xml:space="preserve">
+    <value>È necessario inserire almeno un indirizzo</value>
+  </data>
+  <data name="ErroreLogin" xml:space="preserve">
+    <value>Nome utente o password errati</value>
+  </data>
+  <data name="ErroreLoginSospensione" xml:space="preserve">
+    <value>Soltanto gli amministratori possono effettuare il login mentre l'applicazione è sospesa.</value>
+  </data>
+  <data name="ErroreNessunaImmagineTrovata" xml:space="preserve">
+    <value>Nessuna immagine trovata.</value>
+  </data>
+  <data name="ErroreNessunArticoloInserito" xml:space="preserve">
+    <value>Nessun articolo inserito.</value>
+  </data>
+  <data name="ErroreNumeroIntero" xml:space="preserve">
+    <value>Il campo "{0}" deve essere un numero intero</value>
+  </data>
+  <data name="ErroreModificaOrdineNonTemporaneo" xml:space="preserve">
+    <value>Soltanto gli ordini temporanei possono essere modificati, l'ordine con codice "{0}" è nello stato "{1}".</value>
+  </data>
+  <data name="ErroreOrdineNonTrovato" xml:space="preserve">
+    <value>L'ordine con codice "{0}" non esiste o è stato eliminato.</value>
+  </data>
+  <data name="ErroreOrdineVuoto" xml:space="preserve">
+    <value>Impossibile chiudere un ordine vuoto.</value>
+  </data>
+  <data name="ErroreOrdiniTemporanei" xml:space="preserve">
+    <value>È presente più di un ordine temporaneo.</value>
+  </data>
+  <data name="ErrorePassword" xml:space="preserve">
+    <value>La password è obbligatoria</value>
+  </data>
+  <data name="ErroreQuantitaConfezione" xml:space="preserve">
+    <value>Inserire un multiplo di {0}</value>
+  </data>
+  <data name="ErroreQuantitaDisponibile" xml:space="preserve">
+    <value>Inserire una quantità minore</value>
+  </data>
+  <data name="ErroreQuantitaNumerica" xml:space="preserve">
+    <value>Inserire una quantità numerica</value>
+  </data>
+  <data name="ErroreQuantitaObbligatoria" xml:space="preserve">
+    <value>Inserire una quantità</value>
+  </data>
+  <data name="ErroreQuantitaZero" xml:space="preserve">
+    <value>Inserire almeno una quantità diversa da zero.</value>
+  </data>
+  <data name="ErroreSelezionaArticolo" xml:space="preserve">
+    <value>Seleziona un articolo dalla lista</value>
+  </data>
+  <data name="ErroreSelezioneCliente" xml:space="preserve">
+    <value>Inserisci un codice o seleziona un cliente</value>
+  </data>
+  <data name="ErroreUserName" xml:space="preserve">
+    <value>Il nome utente è obbligatorio</value>
+  </data>
+  <data name="ErroriRiepilogo" xml:space="preserve">
+    <value>Si sono verificati degli errori, controllare i dati inseriti e riprovare.</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="FiltriRicerca" xml:space="preserve">
+    <value>Filtri di ricerca</value>
+  </data>
+  <data name="Footer" xml:space="preserve">
+    <value>Piè di pagina</value>
+  </data>
+  <data name="GestioneAgenti" xml:space="preserve">
+    <value>Gestione utenti</value>
+  </data>
+  <data name="Gruppo" xml:space="preserve">
+    <value>Gruppo</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Intestazione</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Iban" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="ImpostazioniAmministrative" xml:space="preserve">
+    <value>Impostazioni amministrative</value>
+  </data>
+  <data name="ImpostazioniApplicazione" xml:space="preserve">
+    <value>Impostazioni applicazione</value>
+  </data>
+  <data name="ImpostazioniCommerciali" xml:space="preserve">
+    <value>Impostazioni commerciali</value>
+  </data>
+  <data name="ImpostazioniDitta" xml:space="preserve">
+    <value>Impostazioni ditta</value>
+  </data>
+  <data name="ImpostazioniExpertweb" xml:space="preserve">
+    <value>Impostazioni Expertweb</value>
+  </data>
+  <data name="ImpostazioniGenerali" xml:space="preserve">
+    <value>Impostazioni generali</value>
+  </data>
+  <data name="ImpostazioniListini" xml:space="preserve">
+    <value>Impostazioni listini</value>
+  </data>
+  <data name="ImpostazioniMessaggi" xml:space="preserve">
+    <value>Impostazioni messaggi</value>
+  </data>
+  <data name="ImpostazioniMetodiPagamento" xml:space="preserve">
+    <value>Impostazioni metodi pagamento</value>
+  </data>
+  <data name="ImpostazioniOrdine" xml:space="preserve">
+    <value>Impostazioni ordine</value>
+  </data>
+  <data name="ImpostazioniOrdini" xml:space="preserve">
+    <value>Impostazioni ordini</value>
+  </data>
+  <data name="ImpostazioniPredefinite" xml:space="preserve">
+    <value>Impostazioni predefinite</value>
+  </data>
+  <data name="ImpostazioniSicurezza" xml:space="preserve">
+    <value>Impostazioni sicurezza</value>
+  </data>
+  <data name="ImpostazioniStagioni" xml:space="preserve">
+    <value>Impostazioni stagioni</value>
+  </data>
+  <data name="ImpostazioniStampa" xml:space="preserve">
+    <value>Impostazioni stampa</value>
+  </data>
+  <data name="ImpostazioniValute" xml:space="preserve">
+    <value>Impostazioni valute</value>
+  </data>
+  <data name="Inattivo" xml:space="preserve">
+    <value>Inattivo</value>
+  </data>
+  <data name="IndirizziCliente" xml:space="preserve">
+    <value>Indirizzi cliente</value>
+  </data>
+  <data name="Indirizzo" xml:space="preserve">
+    <value>Indirizzo</value>
+  </data>
+  <data name="IndirizzoConsegna" xml:space="preserve">
+    <value>Indirizzo di consegna</value>
+  </data>
+  <data name="IndirizzoPredefinito" xml:space="preserve">
+    <value>Indirizzo predefinito</value>
+  </data>
+  <data name="IndirizzoSedeLegale" xml:space="preserve">
+    <value>Indirizzo sede legale</value>
+  </data>
+  <data name="Inserisci" xml:space="preserve">
+    <value>Inserisci</value>
+  </data>
+  <data name="InserisciNuovoCliente" xml:space="preserve">
+    <value>Inserisci nuovo cliente</value>
+  </data>
+  <data name="InserisciNuovoOrdine" xml:space="preserve">
+    <value>Inserisci nuovo ordine</value>
+  </data>
+  <data name="Linea" xml:space="preserve">
+    <value>Linea</value>
+  </data>
+  <data name="Lingua" xml:space="preserve">
+    <value>Lingua</value>
+  </data>
+  <data name="ListaIndirizzi" xml:space="preserve">
+    <value>Lista indirizzi</value>
+  </data>
+  <data name="Listino" xml:space="preserve">
+    <value>Listino</value>
+  </data>
+  <data name="ListinoConsigliato" xml:space="preserve">
+    <value>Listino consigliato</value>
+  </data>
+  <data name="ListinoPredefinito" xml:space="preserve">
+    <value>Listino predefinito</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Marchio" xml:space="preserve">
+    <value>Marchio</value>
+  </data>
+  <data name="MessaggioConferma" xml:space="preserve">
+    <value>Sei sicuro?</value>
+  </data>
+  <data name="MessaggioConfermaEliminaOrdine" xml:space="preserve">
+    <value>Sei sicuro di voler eliminare l'ordine? Non sarà possibile annullare l'operazione.</value>
+  </data>
+  <data name="MessaggioHome" xml:space="preserve">
+    <value>Messaggio home</value>
+  </data>
+  <data name="MessaggioOrdineChiuso" xml:space="preserve">
+    <value>L'ordine n. "{0}" è stato chiuso correttamente.</value>
+  </data>
+  <data name="MessaggioOrdineSospeso" xml:space="preserve">
+    <value>L'ordine n. "{0}" è stato sospeso correttamente.</value>
+  </data>
+  <data name="MessaggioOrdineTemporaneo" xml:space="preserve">
+    <value>È presente un ordine temporaneo n. {0} del {1:d}.</value>
+  </data>
+  <data name="MessaggioSospensione" xml:space="preserve">
+    <value>Stiamo lavorando sul server, alcune funzionalità potrebbero non essere disponibili.</value>
+  </data>
+  <data name="MetodoPagamento" xml:space="preserve">
+    <value>Metodo di pagamento</value>
+  </data>
+  <data name="MetodoPagamentoPredefinito" xml:space="preserve">
+    <value>Metodo di pagamento predefinito</value>
+  </data>
+  <data name="Modifica" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="ModificaAgente" xml:space="preserve">
+    <value>Modifica agente</value>
+  </data>
+  <data name="ModificaCliente" xml:space="preserve">
+    <value>Modifica cliente {0}</value>
+  </data>
+  <data name="ModificaOrdineTitolo" xml:space="preserve">
+    <value>Modifica ordine n. {0}</value>
+  </data>
+  <data name="ModificaTestata" xml:space="preserve">
+    <value>Modifica testata</value>
+  </data>
+  <data name="MostraFiltriRicerca" xml:space="preserve">
+    <value>Mostra i filtri di ricerca</value>
+  </data>
+  <data name="NascondiFiltriRicerca" xml:space="preserve">
+    <value>Nascondi i filtri di ricerca</value>
+  </data>
+  <data name="Nazione" xml:space="preserve">
+    <value>Nazione</value>
+  </data>
+  <data name="NessunCliente" xml:space="preserve">
+    <value>Nessun cliente inserito</value>
+  </data>
+  <data name="NessunOrdineTrovato" xml:space="preserve">
+    <value>Nessun ordine trovato</value>
+  </data>
+  <data name="NessunTipoOrdine" xml:space="preserve">
+    <value>Nessun tipo ordine trovato per il marchio richiesto</value>
+  </data>
+  <data name="NomeUtente" xml:space="preserve">
+    <value>Nome utente</value>
+  </data>
+  <data name="Numero" xml:space="preserve">
+    <value>Numero</value>
+  </data>
+  <data name="NumeroCapi" xml:space="preserve">
+    <value>N.Pezzi</value>
+  </data>
+  <data name="NumeroMassimoUtenti" xml:space="preserve">
+    <value>Numero massimo utenti</value>
+  </data>
+  <data name="NumeroOrdine" xml:space="preserve">
+    <value>Numero ordine</value>
+  </data>
+  <data name="NuovoCliente" xml:space="preserve">
+    <value>Nuovo cliente</value>
+  </data>
+  <data name="Online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="Operazioni" xml:space="preserve">
+    <value>Operazioni</value>
+  </data>
+  <data name="Ordini" xml:space="preserve">
+    <value>Ordini</value>
+  </data>
+  <data name="PartitaIva" xml:space="preserve">
+    <value>Partita IVA</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Porto" xml:space="preserve">
+    <value>Porto</value>
+  </data>
+  <data name="Predefinito" xml:space="preserve">
+    <value>Predefinito</value>
+  </data>
+  <data name="Provincia" xml:space="preserve">
+    <value>Provincia</value>
+  </data>
+  <data name="RagioneSociale" xml:space="preserve">
+    <value>Ragione sociale</value>
+  </data>
+  <data name="RagioneSocialeCliente" xml:space="preserve">
+    <value>Ragione sociale cliente</value>
+  </data>
+  <data name="Referente" xml:space="preserve">
+    <value>Persona di riferimento</value>
+  </data>
+  <data name="RicercaCliente" xml:space="preserve">
+    <value>Ricerca cliente</value>
+  </data>
+  <data name="Riepilogo" xml:space="preserve">
+    <value>Riepilogo</value>
+  </data>
+  <data name="Salva" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="ScontoCliente" xml:space="preserve">
+    <value>Sconto cliente</value>
+  </data>
+  <data name="ScontoMetodoPagamento" xml:space="preserve">
+    <value>Sconto metodo pagamento</value>
+  </data>
+  <data name="Seleziona" xml:space="preserve">
+    <value>Seleziona</value>
+  </data>
+  <data name="SelezionaArticoloLista" xml:space="preserve">
+    <value>-- Seleziona un articolo --</value>
+  </data>
+  <data name="SelezionaCliente" xml:space="preserve">
+    <value>Seleziona un cliente</value>
+  </data>
+  <data name="SelezionaClienteLista" xml:space="preserve">
+    <value>-- Seleziona un cliente --</value>
+  </data>
+  <data name="SelezionaGruppoLista" xml:space="preserve">
+    <value>-- Seleziona un gruppo --</value>
+  </data>
+  <data name="SelezionaLineaLista" xml:space="preserve">
+    <value>-- Seleziona una linea --</value>
+  </data>
+  <data name="SelezionaLinguaLista" xml:space="preserve">
+    <value>-- Seleziona una lingua --</value>
+  </data>
+  <data name="SelezionaListinoLista" xml:space="preserve">
+    <value>-- Seleziona un listino --</value>
+  </data>
+  <data name="SelezionaMarchioLista" xml:space="preserve">
+    <value>-- Seleziona un marchio --</value>
+  </data>
+  <data name="SelezionaMetodoPagamentoLista" xml:space="preserve">
+    <value>-- Seleziona un metodo di pagamento --</value>
+  </data>
+  <data name="SelezionaNazioneLista" xml:space="preserve">
+    <value>-- Seleziona una nazione --</value>
+  </data>
+  <data name="SelezionaStagioneLista" xml:space="preserve">
+    <value>-- Seleziona una stagione --</value>
+  </data>
+  <data name="SelezionaStatoOrdineLista" xml:space="preserve">
+    <value>-- Seleziona uno stato ordine --</value>
+  </data>
+  <data name="SelezionaTipoAgenteLista" xml:space="preserve">
+    <value>-- Seleziona un tipo utente --</value>
+  </data>
+  <data name="SelezionaTipoOrdineLista" xml:space="preserve">
+    <value>-- Seleziona un tipo ordine --</value>
+  </data>
+  <data name="SelezionaValutaLista" xml:space="preserve">
+    <value>-- Seleziona una valuta --</value>
+  </data>
+  <data name="SitoWeb" xml:space="preserve">
+    <value>Sito web</value>
+  </data>
+  <data name="SospendiOrdine" xml:space="preserve">
+    <value>Ordine sospeso</value>
+  </data>
+  <data name="SospensioneApplicazione" xml:space="preserve">
+    <value>Sospensione applicazione</value>
+  </data>
+  <data name="Sospeso" xml:space="preserve">
+    <value>Sospeso</value>
+  </data>
+  <data name="Stagione" xml:space="preserve">
+    <value>Stagione</value>
+  </data>
+  <data name="Stampa" xml:space="preserve">
+    <value>Stampa</value>
+  </data>
+  <data name="StatoOrdine" xml:space="preserve">
+    <value>Stato ordine</value>
+  </data>
+  <data name="Telefono" xml:space="preserve">
+    <value>Telefono</value>
+  </data>
+  <data name="TipoAgente" xml:space="preserve">
+    <value>Tipo utente</value>
+  </data>
+  <data name="TipoOrdine" xml:space="preserve">
+    <value>Tipo ordine</value>
+  </data>
+  <data name="TitoloSito" xml:space="preserve">
+    <value>Giesse</value>
+  </data>
+  <data name="TornaElencoClienti" xml:space="preserve">
+    <value>Torna all'elenco dei clienti</value>
+  </data>
+  <data name="Trasmesso" xml:space="preserve">
+    <value>Trasmesso</value>
+  </data>
+  <data name="Trasporto" xml:space="preserve">
+    <value>Trasporto</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nome utente</value>
+  </data>
+  <data name="Valore" xml:space="preserve">
+    <value>Valore</value>
+  </data>
+  <data name="ValoreMinimoOrdine" xml:space="preserve">
+    <value>Valore minimo ordine</value>
+  </data>
+  <data name="Valuta" xml:space="preserve">
+    <value>Valuta</value>
+  </data>
+  <data name="Variante" xml:space="preserve">
+    <value>Variante</value>
+  </data>
+  <data name="Vettore" xml:space="preserve">
+    <value>Vettore</value>
+  </data>
+  <data name="MessaggioOrdineEliminato" xml:space="preserve">
+    <value>L'ordine n. "{0}" è stato eliminato correttamente.</value>
+  </data>
+  <data name="OnlineOffline" xml:space="preserve">
+    <value>Online/Offline</value>
+  </data>
+  <data name="Offline" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="ErroreNuovoOrdine" xml:space="preserve">
+    <value>È già presente un ordine temporaneo, è necessario prima chiuderlo o sospenderlo per inserire un nuovo ordine.</value>
+  </data>
+  <data name="MessaggioOrdineTemporaneoElenco" xml:space="preserve">
+    <value>È già presente un ordine temporaneo, non sarà possibile modificare gli altri ordini sospesi o chiusi.</value>
+  </data>
+  <data name="Chiuso" xml:space="preserve">
+    <value>Chiuso</value>
+  </data>
+  <data name="LegendaColori" xml:space="preserve">
+    <value>Legenda colori</value>
+  </data>
+  <data name="Temporaneo" xml:space="preserve">
+    <value>Temporaneo</value>
+  </data>
+  <data name="ErroreAgenteNonTrovato" xml:space="preserve">
+    <value>L'agente con codice "{0}" non esiste o è stato eliminato.</value>
+  </data>
+  <data name="ErroreLicenze" xml:space="preserve">
+    <value>È stato raggiunto il numero massimo di licenze, per inserire un nuovo agente contattare Expertweb.</value>
+  </data>
+  <data name="FiltriAgente" xml:space="preserve">
+    <value>Filtri utente</value>
+  </data>
+  <data name="NuovoAgente" xml:space="preserve">
+    <value>Nuovo utente</value>
+  </data>
+  <data name="MessaggioConfermaSospensione" xml:space="preserve">
+    <value>Sei sicuro di voler sospendere l'applicazione?</value>
+  </data>
+  <data name="InserisciTestataOrdine" xml:space="preserve">
+    <value>Inserisci testata ordine</value>
+  </data>
+  <data name="MessaggioConfermaTestata" xml:space="preserve">
+    <value>Verifica le impostazioni dell'ordine, dopodichè premi "Conferma" per confermare la testata.</value>
+  </data>
+  <data name="MessaggioInserisciTestata" xml:space="preserve">
+    <value>Per inserire una nuova testata ordine scegli un cliente dall'elenco oppure fai clic sul pulsante a destra per inserire un nuovo cliente.</value>
+  </data>
+  <data name="ModificaTestataOrdine" xml:space="preserve">
+    <value>Modifica testata ordine n. {0}</value>
+  </data>
+  <data name="ConfermaTestata" xml:space="preserve">
+    <value>Conferma testata</value>
+  </data>
+  <data name="ErroreCondizioneCommerciale" xml:space="preserve">
+    <value>Sono presenti dai non validi sulle condizioni commerciali del cliente.</value>
+  </data>
+  <data name="ErroreCodiceFiscaleNonValido" xml:space="preserve">
+    <value>Il campo "{0}" non contiene un codice fiscale valido.</value>
+  </data>
+  <data name="ErrorePartitaIvaNonValida" xml:space="preserve">
+    <value>Il campo "{0}" non contiene una partita IVA valida.</value>
+  </data>
+  <data name="MessaggioClienteInserito" xml:space="preserve">
+    <value>Il cliente "{0}" è stato inserito correttamente.</value>
+  </data>
+  <data name="Famiglia" xml:space="preserve">
+    <value>Famiglia</value>
+  </data>
+  <data name="SelezionaFamigliaLista" xml:space="preserve">
+    <value>-- Seleziona una famiglia --</value>
+  </data>
+  <data name="SelezionaTessutoLista" xml:space="preserve">
+    <value>-- Seleziona un tessuto --</value>
+  </data>
+  <data name="Tessuto" xml:space="preserve">
+    <value>Tessuto</value>
+  </data>
+  <data name="ErroreListinoNonTrovato" xml:space="preserve">
+    <value>Prezzo mancante a listino.</value>
+  </data>
+  <data name="MostraImmagini" xml:space="preserve">
+    <value>Mostra le immagini</value>
+  </data>
+  <data name="NascondiImmagini" xml:space="preserve">
+    <value>Nascondi le immagini</value>
+  </data>
+  <data name="PrezzoAcquisto" xml:space="preserve">
+    <value>Prezzo di acquisto</value>
+  </data>
+  <data name="MessaggioValoreMinimoOrdine" xml:space="preserve">
+    <value>L'ordine dovrà raggiungere l'importo minimo di {0} {1:0.00} altrimenti rimarrà sospeso.</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="ErroreListinoOrdine" xml:space="preserve">
+    <value>Impossibile trovare un listino in base alle attuali impostazioni dell'ordine.</value>
+  </data>
+  <data name="Via" xml:space="preserve">
+    <value>Via</value>
+  </data>
+  <data name="Genere" xml:space="preserve">
+    <value>Boy &amp; Girl</value>
+  </data>
+  <data name="SelezionaGenereLista" xml:space="preserve">
+    <value>-- Seleziona un genere --</value>
+  </data>
+  <data name="ErroreListinoArticolo" xml:space="preserve">
+    <value>L'articolo "{0}" non ha alcun listino associato.</value>
+  </data>
+  <data name="PrezziAcquisto" xml:space="preserve">
+    <value>Prezzi di acquisto</value>
+  </data>
+  <data name="PrezziConsigliati" xml:space="preserve">
+    <value>Prezzi consigliati</value>
+  </data>
+  <data name="Copia" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="Importo" xml:space="preserve">
+    <value>Importo imponibile</value>
+  </data>
+  <data name="Incolla" xml:space="preserve">
+    <value>Incolla</value>
+  </data>
+  <data name="Markup" xml:space="preserve">
+    <value>Mark up</value>
+  </data>
+  <data name="MarkupMedio" xml:space="preserve">
+    <value>Mark up medio</value>
+  </data>
+  <data name="PrezzoConsigliato" xml:space="preserve">
+    <value>Prezzo consigliato</value>
+  </data>
+  <data name="TotaleNettoOrdine" xml:space="preserve">
+    <value>Totale netto</value>
+  </data>
+  <data name="TotaleOrdine" xml:space="preserve">
+    <value>Totale ordine</value>
+  </data>
+  <data name="MaxArticoli" xml:space="preserve">
+    <value>disp.</value>
+  </data>
+  <data name="MessaggioQuantitaConfezione" xml:space="preserve">
+    <value>È necessario inserire una quantità multipla di {0}.</value>
+  </data>
+  <data name="MessaggioConfermaInserimento" xml:space="preserve">
+    <value>Inserita quantità {0} per la variante "{1}" dell'articolo "{2}".</value>
+  </data>
+  <data name="ConfermaEliminaAgente" xml:space="preserve">
+    <value>Sei sicuro di voler eliminare l'agente? Non sarà possibile annullare l'operazione.</value>
+  </data>
+  <data name="DataUltimaOperazione" xml:space="preserve">
+    <value>Data ultima operazione</value>
+  </data>
+  <data name="ErroreEliminaAmministratore" xml:space="preserve">
+    <value>Impossibile eliminare un amministratore.</value>
+  </data>
+  <data name="MessaggioAgenteEliminato" xml:space="preserve">
+    <value>L'agente "{0}" è stato eliminato correttamente.</value>
+  </data>
+  <data name="NessunAgenteTrovato" xml:space="preserve">
+    <value>Nessun agente trovato.</value>
+  </data>
+  <data name="BloccoNuoviClienti" xml:space="preserve">
+    <value>Blocco nuovi clienti</value>
+  </data>
+  <data name="ImpostazioniBlocchi" xml:space="preserve">
+    <value>Impostazioni blocchi</value>
+  </data>
+  <data name="MessaggioImpostazioniSalvate" xml:space="preserve">
+    <value>Impostazioni salvate correttamente.</value>
+  </data>
+  <data name="Sconto" xml:space="preserve">
+    <value>Sconto</value>
+  </data>
+  <data name="NascondiImportiStampa" xml:space="preserve">
+    <value>Nascondi importi in stampa</value>
+  </data>
+  <data name="OrdinamentoInserimento" xml:space="preserve">
+    <value>Ordina per inserimento</value>
+  </data>
+  <data name="OrdinamentoMarchio" xml:space="preserve">
+    <value>Ordina per marchio</value>
+  </data>
+  <data name="OrdinamentoStampa" xml:space="preserve">
+    <value>Ordinamento della stampa</value>
+  </data>
+  <data name="StampaOrdine" xml:space="preserve">
+    <value>Stampa ordine</value>
+  </data>
+  <data name="AgenteTimbroFirma" xml:space="preserve">
+    <value>Agente (timbro e firma)</value>
+  </data>
+  <data name="ClienteTimbroFirma" xml:space="preserve">
+    <value>Cliente (timbro e firma)</value>
+  </data>
+  <data name="CondizioniVendita" xml:space="preserve">
+    <value>Condizioni generali di vendita</value>
+  </data>
+  <data name="PropostaOrdine" xml:space="preserve">
+    <value>Proposta d'ordine n. {0} del {1:dd/MM/yyyy}</value>
+  </data>
+  <data name="TotaleNetto" xml:space="preserve">
+    <value>Totale netto</value>
+  </data>
+  <data name="Cellulare" xml:space="preserve">
+    <value>Cellulare</value>
+  </data>
+  <data name="DataConsegnaFine" xml:space="preserve">
+    <value>Data consegna fine</value>
+  </data>
+  <data name="DataConsegnaInizio" xml:space="preserve">
+    <value>Data consegna inizio</value>
+  </data>
+  <data name="Totale" xml:space="preserve">
+    <value>Totale</value>
+  </data>
+  <data name="Tipologia" xml:space="preserve">
+    <value>Tipologia</value>
+  </data>
+  <data name="NascondiQuantitaZero" xml:space="preserve">
+    <value>Nascondi articoli con quantità zero</value>
+  </data>
+  <data name="BloccoBanca" xml:space="preserve">
+    <value>Blocca la modifica della banca in testata</value>
+  </data>
+  <data name="BloccoDataOrdine" xml:space="preserve">
+    <value>Blocca la modifica della data dell'ordine in testata</value>
+  </data>
+  <data name="BloccoDateConsegna" xml:space="preserve">
+    <value>Blocca la modifica delle date di consegna</value>
+  </data>
+  <data name="BloccoMetodoPagamento" xml:space="preserve">
+    <value>Blocca la selezione del metodo di pagamento in testata</value>
+  </data>
+  <data name="BloccoPorto" xml:space="preserve">
+    <value>Blocca la selezione del porto in testata</value>
+  </data>
+  <data name="BloccoTrasporto" xml:space="preserve">
+    <value>Blocca la selezione del trasporto in testata</value>
+  </data>
+  <data name="BloccoValuta" xml:space="preserve">
+    <value>Blocca la selezione della valuta in testata</value>
+  </data>
+  <data name="BloccoVettore" xml:space="preserve">
+    <value>Blocca la selezione del vettore in testata</value>
+  </data>
+  <data name="DescrizioneBlocchi" xml:space="preserve">
+    <value>Seleziona le caselle seguenti per bloccare i dati sull'utente.</value>
+  </data>
+  <data name="TornaElencoAgenti" xml:space="preserve">
+    <value>Torna all'elenco degli utenti</value>
+  </data>
+  <data name="ErroreClienteCliente" xml:space="preserve">
+    <value>Non è stato trovato il cliente associato all'agente con codice "{0}".</value>
+  </data>
+  <data name="NumeroDecimali" xml:space="preserve">
+    <value>Numero decimali</value>
+  </data>
+  <data name="AgenteInseritoCorrettamente" xml:space="preserve">
+    <value>L'agente con codice "{0}" è stato inserito correttamente.</value>
+  </data>
+  <data name="AgenteModificatoCorrettamente" xml:space="preserve">
+    <value>L'agente con codice "{0}" è stato modificato correttamente.</value>
+  </data>
+  <data name="InserisciNuovoAgente" xml:space="preserve">
+    <value>Inserisci nuovo agente</value>
+  </data>
+  <data name="ModificaAgenteCodice" xml:space="preserve">
+    <value>Modifica agente {0}</value>
+  </data>
+  <data name="SelezionaProvinciaLista" xml:space="preserve">
+    <value>-- Seleziona una provincia --</value>
+  </data>
+  <data name="CopiaIncolla" xml:space="preserve">
+    <value>Copia/ Incolla</value>
+  </data>
+  <data name="MostraImmaginiNonTrovate" xml:space="preserve">
+    <value>Mostra immagini sostitutive per le immagini non trovate</value>
+  </data>
+  <data name="TutteLista" xml:space="preserve">
+    <value>-- Tutte --</value>
+  </data>
+  <data name="TuttiLista" xml:space="preserve">
+    <value>-- Tutti --</value>
+  </data>
+  <data name="MostraGalleriaImmagini" xml:space="preserve">
+    <value>Mostra galleria immagini aperta</value>
+  </data>
+  <data name="PrezzoNetto" xml:space="preserve">
+    <value>Prezzo netto</value>
+  </data>
+  <data name="GestioneOrdiniAnnullati" xml:space="preserve">
+    <value>Gestione ordini annullati</value>
+  </data>
+  <data name="Ripristina" xml:space="preserve">
+    <value>Ripristina</value>
+  </data>
+  <data name="DataInserimento" xml:space="preserve">
+    <value>Data inserimento</value>
+  </data>
+  <data name="MessaggioOrdineRipristinato" xml:space="preserve">
+    <value>L'ordine n. "{0}" è stato ripristinato correttamente.</value>
+  </data>
+  <data name="NumeroGiorniAnnullamentoOrdiniSospesi" xml:space="preserve">
+    <value>Numero di giorni dopo i quali vengono annullati gli ordini sospesi</value>
+  </data>
+  <data name="TipoOrdineAnnullamento" xml:space="preserve">
+    <value>Tipo di ordini per i quali è previsto l'annullamento dopo {0} giorni di sospensione</value>
+  </data>
+  <data name="ImpostazioniClientiNuovi" xml:space="preserve">
+    <value>Impostazioni clienti nuovi</value>
+  </data>
+  <data name="GestioneGeneraleImpostazioniOrdini" xml:space="preserve">
+    <value>Gestione generale impostazioni</value>
+  </data>
+  <data name="SelezioneAgenti" xml:space="preserve">
+    <value>Selezione agenti</value>
+  </data>
+  <data name="SelezioneAgentiInfo" xml:space="preserve">
+    <value>Seleziona tutti gli agenti a cui vuoi applicare le impostazioni.</value>
+  </data>
+  <data name="MessaggioGestioneGeneraleImpostazioniOrdini" xml:space="preserve">
+    <value>In questa schermata è possibile selezionare degli agenti a cui applicare nuove impostazioni ordini e impostazioni stagioni in un'unica operazione.</value>
+  </data>
+  <data name="NessunAgenteSelezionato" xml:space="preserve">
+    <value>Nessun agente selezionato.</value>
+  </data>
+  <data name="AggiornaApplicazione" xml:space="preserve">
+    <value>Aggiorna applicazione</value>
+  </data>
+  <data name="AttesaDownload" xml:space="preserve">
+    <value>Download degli aggiornamenti in corso, si prega di attendere...</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadCompletato" xml:space="preserve">
+    <value>Download completato correttamente, fai clic &lt;a href="{0}"&gt;qui&lt;/a&gt; per procedere con l'installazione.</value>
+  </data>
+  <data name="ErroreDownload" xml:space="preserve">
+    <value>Errore durante il download degli aggiornamenti: {0}</value>
+  </data>
+  <data name="Installa" xml:space="preserve">
+    <value>Installa</value>
+  </data>
+  <data name="InstallazioneCompletata" xml:space="preserve">
+    <value>Installazione completata correttamente.</value>
+  </data>
+  <data name="IstruzioniDownload" xml:space="preserve">
+    <value>Fai clic sul bottone seguente per controllare la presenza di aggiornamenti e scaricare l'ultima versione del programma.</value>
+  </data>
+  <data name="IstruzioniInstallazione" xml:space="preserve">
+    <value>Fai ora clic sul bottone seguente per installare gli aggiornamenti scaricati.</value>
+  </data>
+  <data name="MessaggioRipetiDownload" xml:space="preserve">
+    <value>Gli aggiornamenti risultano già scaricati: è ora possibile procedere con l'installazione. Per ripetere il download in caso di errore, premere il bottone seguente.</value>
+  </data>
+  <data name="RipetiDownload" xml:space="preserve">
+    <value>Ripeti download</value>
+  </data>
+  <data name="WarningInstallazione" xml:space="preserve">
+    <value>Attenzione: una volta terminati gli aggiornamenti è possibile che l'applicazione ritorni automaticamente alla schermata di login.</value>
+  </data>
+  <data name="OrdiniGiaTrasmessi" xml:space="preserve">
+    <value>Tutti gli ordini e i clienti risultano già trasmessi. La tua applicazione è già sincronizzata con il server centrale.</value>
+  </data>
+  <data name="TrasmissioneOrdini" xml:space="preserve">
+    <value>Trasmissione ordini</value>
+  </data>
+  <data name="AttesaTrasmissioneOrdini" xml:space="preserve">
+    <value>Trasmissione in corso, si prega di attendere...</value>
+  </data>
+  <data name="IstruzioniTrasmissioneOrdini" xml:space="preserve">
+    <value>Numero di ordini da trasmettere: {0}&lt;br /&gt;Numero di clienti da trasmettere: {1}&lt;br /&gt;Fai clic sul bottone seguente per iniziare la trasmissione.</value>
+  </data>
+  <data name="Trasmetti" xml:space="preserve">
+    <value>Trasmetti</value>
+  </data>
+  <data name="EsitoCliente" xml:space="preserve">
+    <value>Cliente n. {0} - Esito: &lt;span class="{1}"&gt;{2}&lt;/span&gt;</value>
+  </data>
+  <data name="EsitoOrdine" xml:space="preserve">
+    <value>Ordine n. {0} - Esito: &lt;span class="{1}"&gt;{2}&lt;/span&gt;</value>
+  </data>
+  <data name="EsitoTrasmissioneClienti" xml:space="preserve">
+    <value>Esito trasmissione clienti</value>
+  </data>
+  <data name="EsitoTrasmissioneOrdini" xml:space="preserve">
+    <value>Esito trasmissione ordini</value>
+  </data>
+  <data name="GiaTrasmesso" xml:space="preserve">
+    <value>Già trasmesso</value>
+  </data>
+  <data name="NessunClienteDaTrasmettere" xml:space="preserve">
+    <value>Nessun cliente da trasmettere.</value>
+  </data>
+  <data name="NessunOrdineDaTrasmettere" xml:space="preserve">
+    <value>Nessun ordine da trasmettere.</value>
+  </data>
+  <data name="NonTrasmesso" xml:space="preserve">
+    <value>Non trasmesso</value>
+  </data>
+  <data name="TrasmissioneErrore" xml:space="preserve">
+    <value>Errore durante la trasmissione, controlla di avere una connessione a Internet attiva o riprova più tardi.&lt;br /&gt;Descrizione tecnica dell'errore: {0}</value>
+  </data>
+  <data name="TrasmissioneSuccesso" xml:space="preserve">
+    <value>Trasmissione effettuata con successo.</value>
+  </data>
+  <data name="TornaElencoOrdini" xml:space="preserve">
+    <value>Torna all'elenco degli ordini</value>
+  </data>
+  <data name="MessaggioAnnullamento" xml:space="preserve">
+    <value>L'ordine sospeso rimarrà a disposizione per il completamento per {0} giorni, poi verrà automaticamente annullato.</value>
+  </data>
+  <data name="GestioneOrdini" xml:space="preserve">
+    <value>Gestione ordini</value>
+  </data>
+  <data name="TipiOrdineAnnullamento" xml:space="preserve">
+    <value>Tipi di ordine per i quali è previsto l'annullamento dopo {0} giorni di sospensione</value>
+  </data>
+  <data name="FiltriOrdini" xml:space="preserve">
+    <value>Filtri ordini</value>
+  </data>
+  <data name="Utente" xml:space="preserve">
+    <value>Utente</value>
+  </data>
+  <data name="InserimentoArticoli" xml:space="preserve">
+    <value>Inserimento articoli</value>
+  </data>
+  <data name="GestioneClienti" xml:space="preserve">
+    <value>Gestione clienti</value>
+  </data>
+  <data name="FiltriClienti" xml:space="preserve">
+    <value>Filtri clienti</value>
+  </data>
+  <data name="IstruzioniGestioneClienti" xml:space="preserve">
+    <value>Seleziona un cliente per creare un nuovo profilo utente.</value>
+  </data>
+  <data name="NessunClienteTrovato" xml:space="preserve">
+    <value>Nessun cliente trovato.</value>
+  </data>
+  <data name="CreaProfiloUtente" xml:space="preserve">
+    <value>Crea profilo utente</value>
+  </data>
+  <data name="SelezionaAgenteLista" xml:space="preserve">
+    <value>-- Seleziona un agente --</value>
+  </data>
+  <data name="ErroreCodiceClienteNumerico" xml:space="preserve">
+    <value>Il codice del cliente "{0}" non è numerico.</value>
+  </data>
+  <data name="MessaggioQuantitaNonCongruenti" xml:space="preserve">
+    <value>Quantità per taglia non congruenti. Continuare?</value>
+  </data>
+  <data name="Manuale" xml:space="preserve">
+    <value>Manuale d'uso</value>
+  </data>
+  <data name="Stuazione" xml:space="preserve">
+    <value>Situazione</value>
+  </data>
+  <data name="ClienteInattivo" xml:space="preserve">
+    <value>Cliente inattivo</value>
+  </data>
+  <data name="ConsegneRegolari" xml:space="preserve">
+    <value>Consegne regolari</value>
+  </data>
+  <data name="ImballoMerceSospesa" xml:space="preserve">
+    <value>Imballo merce sospesa</value>
+  </data>
+  <data name="Insoluto" xml:space="preserve">
+    <value>Pagamenti scaduti</value>
+  </data>
+  <data name="NonInsoluto" xml:space="preserve">
+    <value>Pagamenti regolari</value>
+  </data>
+  <data name="PraticaLegale" xml:space="preserve">
+    <value>Pratica legale</value>
+  </data>
+  <data name="RicezioneOrdiniBloccata" xml:space="preserve">
+    <value>Ricezione ordini bloccata</value>
+  </data>
+  <data name="Situazione" xml:space="preserve">
+    <value>Situazione</value>
+  </data>
+  <data name="SpedizioneBloccata" xml:space="preserve">
+    <value>Spedizione bloccata</value>
+  </data>
+  <data name="ErroreClienteBloccato" xml:space="preserve">
+    <value>Inserimento ordine non ammesso, contattare l'ufficio commerciale.</value>
+  </data>
+  <data name="ErroreLoginClienteBloccato" xml:space="preserve">
+    <value>Autorizzazione non riconosciuta, contattare l’ufficio commerciale.</value>
+  </data>
+  <data name="AggiornaDatabase" xml:space="preserve">
+    <value>Aggiorna database</value>
+  </data>
+  <data name="ErroreInstallazione" xml:space="preserve">
+    <value>Errore durante l'installazione: {0}</value>
+  </data>
+  <data name="IstruzioniDownloadDB" xml:space="preserve">
+    <value>Fai clic sul bottone seguente per scaricare l'aggiornamento dei dati.</value>
+  </data>
+  <data name="CreaAggiornamenti" xml:space="preserve">
+    <value>Crea aggiornamenti</value>
+  </data>
+  <data name="ErroreGenericoDescrizione" xml:space="preserve">
+    <value>Si è verificato un errore: {0}.</value>
+  </data>
+  <data name="IstruzioniCreaAggiornamenti" xml:space="preserve">
+    <value>Fai clic sul bottone seguente per creare gli aggiornamenti per gli agenti offline&lt;br /&gt;Nota: l'operazione potrebbe richiedere parecchio tempo.&lt;br /&gt;Numero di agenti che verranno aggiornati: {0}.</value>
+  </data>
+  <data name="MessaggioOperazioneCompletata" xml:space="preserve">
+    <value>Operazione completata correttamente.</value>
+  </data>
+  <data name="NessunAgenteDaAggiornare" xml:space="preserve">
+    <value>Non è presente nessun agente offline da aggiornare.</value>
+  </data>
+  <data name="NessunAggiornamentoDisponibile" xml:space="preserve">
+    <value>Nessun aggiornamento disponibile.</value>
+  </data>
+  <data name="OperazioneInCorso" xml:space="preserve">
+    <value>Operazione in corso, si prega di attendere...</value>
+  </data>
+  <data name="IstruzioniAggiornaDatabase" xml:space="preserve">
+    <value>Il database risulta &lt;em&gt;vuoto&lt;/em&gt;. Per effettuare un aggiornamento dei dati fai clic &lt;a href="{0}"&gt;qui&lt;/a&gt;.</value>
+  </data>
+  <data name="DatiCorrotti" xml:space="preserve">
+    <value>I dati scaricati risultano corrotti, è necessario ripetere il download.</value>
+  </data>
+  <data name="ApplicazioneGiaAggiornata" xml:space="preserve">
+    <value>L'applicazione è già aggiornata all'ultima versione disponibile.</value>
+  </data>
+  <data name="DatabaseGiaAggiornato" xml:space="preserve">
+    <value>Il database è già aggiornato all'ultima versione disponibile.</value>
+  </data>
+  <data name="NecessarioAggiornamento" xml:space="preserve">
+    <value>È stato rilevato un aggiornamento del database. Prima di poter trasmettere gli ordini è necessario effettuare l'aggiornamento del database. Fai clic &lt;a href="{0}"&gt;qui&lt;/a&gt; per continuare.</value>
+  </data>
+  <data name="UtilizzaOffline" xml:space="preserve">
+    <value>Utilizza l'offline</value>
+  </data>
+  <data name="AggiornaImmagini" xml:space="preserve">
+    <value>Aggiorna immagini</value>
+  </data>
+  <data name="IstruzioniDownloadImmagini" xml:space="preserve">
+    <value>Fai clic sul bottone seguente per scaricare le nuove immagini.</value>
+  </data>
+  <data name="AggiornamentiNonTrovati" xml:space="preserve">
+    <value>Non sono presenti aggiornamenti sul server.</value>
+  </data>
+  <data name="ErroreNomeUtenteEsistente" xml:space="preserve">
+    <value>Nome utente già esistente</value>
+  </data>
+  <data name="DatiUtente" xml:space="preserve">
+    <value>Dati utente</value>
+  </data>
+  <data name="InserisciNomeUtente" xml:space="preserve">
+    <value>Inserisci nome utente</value>
+  </data>
+  <data name="IstruzioniInserisciNomeUtente" xml:space="preserve">
+    <value>Inserisci il tuo nome utente fornito dalla casa madre (es. "XX0001").</value>
+  </data>
+  <data name="ErroreConnessioneServer" xml:space="preserve">
+    <value>Si è verificato un errore durante la connessione al server.&lt;br /&gt;Controlla di avere una connessione a Internet attiva o riprova più tardi.</value>
+  </data>
+  <data name="Imballi" xml:space="preserve">
+    <value>Imballi</value>
+  </data>
+  <data name="SelezionaImballo" xml:space="preserve">
+    <value>Seleziona un imballo per inserire automaticamente le quantità corrette.</value>
+  </data>
+  <data name="NessunImballoTrovato" xml:space="preserve">
+    <value>Nessun imballo trovato.</value>
+  </data>
+  <data name="NumeroImballi" xml:space="preserve">
+    <value>Numero Imballi</value>
+  </data>
+  <data name="SviluppoTaglie" xml:space="preserve">
+    <value>Sviluppo Taglie</value>
+  </data>
+  <data name="ErroreQuantitaImballi" xml:space="preserve">
+    <value>Per le varianti che dispongono di imballi, è necessario inserire le quantità utilizzando il campo "Quantità Imballo".</value>
+  </data>
+  <data name="CodiceAgenteCliente" xml:space="preserve">
+    <value>Codice agente/cliente</value>
+  </data>
+  <data name="DescrizioneUser" xml:space="preserve">
+    <value>Descrizione User</value>
+  </data>
+  <data name="ErroreUserEsistente" xml:space="preserve">
+    <value>User già esistente</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="CodiceImballo" xml:space="preserve">
+    <value>Codice Imballo</value>
+  </data>
+  <data name="QuantitaImballo" xml:space="preserve">
+    <value>Quantità Imballo</value>
+  </data>
+  <data name="ModificaNomeUtente" xml:space="preserve">
+    <value>Modifica nome utente</value>
+  </data>
+  <data name="impostazioniTipiOrdine" xml:space="preserve">
+    <value>Impostazioni ordine a listino e metodo pagamento fisso</value>
+  </data>
+  <data name="ErroriImpostazioniTipiOrdine" xml:space="preserve">
+    <value>Valorizzare i 3 campi "Tipo ordine", "Listino" e "Metodo di pagamento", oppure lasciarli tutti e 3 non valorizzati</value>
+  </data>
+  <data name="Cataloghi" xml:space="preserve">
+    <value>Cataloghi</value>
+  </data>
+  <data name="ErroreNessunCliente" xml:space="preserve">
+    <value>Non sono presenti clienti associati all'agente</value>
+  </data>
+  <data name="ErroreNessunPorto" xml:space="preserve">
+    <value>Non è definito il Porto predefinito per il cliente {0]</value>
+  </data>
+  <data name="ErroreNessunTipoOrdine" xml:space="preserve">
+    <value>Non è presente alcun tipo ordine associato al marchio {0}</value>
+  </data>
+  <data name="ErroreNessunTrasporto" xml:space="preserve">
+    <value>Non è definito il Trasporto predefinito per il cliente {0]</value>
+  </data>
+  <data name="ErroreNessunVettore" xml:space="preserve">
+    <value>Non è definito il Vettore predefinito per il cliente {0]</value>
+  </data>
+  <data name="DisponibilitaIconaTitolo" xml:space="preserve">
+    <value>Limiti icone disponibilità</value>
+  </data>
+  <data name="ErroreNumeroInteroNoCampo" xml:space="preserve">
+    <value>Inserire un numero intero</value>
+  </data>
+  <data name="ErroriLimitiDisponibilita" xml:space="preserve">
+    <value>Il limite inferiore deve essere minore o uguale di quello superiore</value>
+  </data>
+  <data name="Inferiore" xml:space="preserve">
+    <value>inferiore</value>
+  </data>
+  <data name="MostraDisponibilitaIcona" xml:space="preserve">
+    <value>Indicazione disponibilità con icona</value>
+  </data>
+  <data name="Superiore" xml:space="preserve">
+    <value>superiore</value>
+  </data>
+  <data name="ErroreListinoVarianti" xml:space="preserve">
+    <value>Errore: un solo listino deve contenere i prezzi di tutte le varianti di uno stesso articolo</value>
+  </data>
+  <data name="Allegato" xml:space="preserve">
+    <value>Allegato</value>
+  </data>
+  <data name="DisponibilitaMax" xml:space="preserve">
+    <value>Disponibilità alta</value>
+  </data>
+  <data name="DisponibilitaMed" xml:space="preserve">
+    <value>Disponibilità media</value>
+  </data>
+  <data name="DisponibilitaMin" xml:space="preserve">
+    <value>Disponibilità bassa</value>
+  </data>
+  <data name="ErroreNoEstensioneAllegato" xml:space="preserve">
+    <value>Errore: non è possibile selezionare un file privo di estensione</value>
+  </data>
+  <data name="WarningDisponibilitaSuperata" xml:space="preserve">
+    <value>Per richieste di quantità superiori alla disponibilità web contattare l'ufficio commerciale</value>
+  </data>
+  <data name="TroppiArticoli" xml:space="preserve">
+    <value>ATTENZIONE La vostra selezione contiene più di 1000 articoli.&lt;br /&gt;
+Per poter visualizzare i prodotti di questa sezione
+selezionare un ulteriore filtro.</value>
+  </data>
+  <data name="disponibile" xml:space="preserve">
+    <value>Disponibile</value>
+  </data>
+  <data name="ErroreValutaDefault" xml:space="preserve">
+    <value>Non è presente alcuna valuta associata all'agente</value>
+  </data>
+  <data name="TornaHome" xml:space="preserve">
+    <value>Torna alla home page</value>
+  </data>
+  <data name="AttivaAreaDocumentale" xml:space="preserve">
+    <value>Attiva area documentale</value>
+  </data>
+  <data name="CartellaDocumentiPdf" xml:space="preserve">
+    <value>Cartella documenti PDF</value>
+  </data>
+  <data name="ImpostazioniAreaDocumentale" xml:space="preserve">
+    <value>Impostazioni area documentale</value>
+  </data>
+  <data name="AreaDocumentale" xml:space="preserve">
+    <value>Area documentale</value>
+  </data>
+  <data name="Tipo" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Scaduti" xml:space="preserve">
+    <value>Scaduti</value>
+  </data>
+  <data name="Descrizione" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="NessunDocumentoTrovato" xml:space="preserve">
+    <value>Nessun documento trovato.</value>
+  </data>
+  <data name="Titolo" xml:space="preserve">
+    <value>Titolo</value>
+  </data>
+  <data name="ErrorePercorsoNonTrovato" xml:space="preserve">
+    <value>Percorso non trovato</value>
+  </data>
+  <data name="DocumentoNonTrovato" xml:space="preserve">
+    <value>Il documento "{0}" non può essere mostrato. Il file "{1}" non è stato trovato, contattare l'ufficio commerciale.</value>
+  </data>
+  <data name="DataScadenza" xml:space="preserve">
+    <value>Data di scadenza</value>
+  </data>
+  <data name="ImpostazioniNuoviClienti" xml:space="preserve">
+    <value>Impostazioni nuovi clienti</value>
+  </data>
+  <data name="PartitaIvaObbligatoria" xml:space="preserve">
+    <value>Partita IVA obbligatoria</value>
+  </data>
+  <data name="CodiceFiscaleObbligatorio" xml:space="preserve">
+    <value>Codice fiscale obbligatorio</value>
+  </data>
+  <data name="AbiObbligatorio" xml:space="preserve">
+    <value>ABI obbligatorio</value>
+  </data>
+  <data name="CabObbligatorio" xml:space="preserve">
+    <value>CAB obbligatorio</value>
+  </data>
+  <data name="CapIndirizzoObbligatorio" xml:space="preserve">
+    <value>CAP indirizzo obbligatorio</value>
+  </data>
+  <data name="CapSedeLegaleObbligatorio" xml:space="preserve">
+    <value>CAP sede legale obbligatorio</value>
+  </data>
+  <data name="IbanObbligatorio" xml:space="preserve">
+    <value>IBAN obbligatorio</value>
+  </data>
+  <data name="TelefonoObbligatorio" xml:space="preserve">
+    <value>Telefono obbligatorio</value>
+  </data>
+  <data name="ImpostazioniNuoviOrdini" xml:space="preserve">
+    <value>Impostazioni nuovi ordini</value>
+  </data>
+  <data name="NascondiSconto" xml:space="preserve">
+    <value>Nascondi prezzo d'acquisto e sconto</value>
+  </data>
+  <data name="CartellaPdfArticoli" xml:space="preserve">
+    <value>Cartella PDF articoli</value>
+  </data>
+  <data name="MostraPdfArticoli" xml:space="preserve">
+    <value>Mostra PDF articoli</value>
+  </data>
+  <data name="ScaricaPdfArticolo" xml:space="preserve">
+    <value>Mostra scheda articolo</value>
+  </data>
+  <data name="BloccoIndirizziNuoviClientiVecchi" xml:space="preserve">
+    <value>Blocco indirizzi nuovi per clienti vecchi</value>
+  </data>
+  <data name="InserisciNuovoIndirizzo" xml:space="preserve">
+    <value>Inserisci nuovo indirizzo</value>
+  </data>
+  <data name="AttivaNuoviIndirizzi" xml:space="preserve">
+    <value>Attiva nuovi indirizzi</value>
+  </data>
+  <data name="BloccoDataConsegnaManualeTestata" xml:space="preserve">
+    <value>Blocco data consegna manuale testata</value>
+  </data>
+  <data name="ErroreQuantitaDisponibileold" xml:space="preserve">
+    <value>Inserire una quantità minore di {0}</value>
+  </data>
+  <data name="DisponibilitaInEsaurimento" xml:space="preserve">
+    <value>Disponibilità in esaurimento</value>
+  </data>
+  <data name="Rifordine" xml:space="preserve">
+    <value>Riferimento ordine</value>
+  </data>
+</root>

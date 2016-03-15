@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Nazione" table="Nazioni">
+    <id name="Codice" length="3">
+      <generator class="assigned" />
+    </id>
+    <property name="Descrizione" length="35" />
+    <property name="Cee" />
+  </class>
+</hibernate-mapping>

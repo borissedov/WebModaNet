@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="CondizioneCommerciale" table="CondizioniCommerciali">
+    <id name="Id" column="ID">
+      <generator class="identity" />
+    </id>
+    <many-to-one name="Cliente" column="CodiceCliente" foreign-key="none" />
+    <property name="CodiceAgente" />
+    <property name="DataDecorrenza" />
+    <property name="DataScadenza" />
+    <many-to-one name="Marchio" column="CodiceMarchio" foreign-key="none" />
+    <property name="CodiceListino" length="6" />
+    <many-to-one name="MetodoPagamento" column="CodiceMetodoPagamento" foreign-key="none" />
+    <property name="CodicePoliticaSconti" length="6" />
+  </class>
+</hibernate-mapping>

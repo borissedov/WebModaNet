@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="Variante" table="Varianti">
+    <composite-id>
+      <key-property name="Codice" length="50" />
+      <key-many-to-one name="Articolo" column="CodiceArticolo" foreign-key="none" />
+    </composite-id>
+    <property name="Descrizione" length="35" />
+    <property name="DataInizioValidita" />
+    <property name="DataFineValidita" />
+    
+    <!--
+      Quantita
+      -->
+    <property name="Quantita1" />
+    <property name="Quantita2" />
+    <property name="Quantita3" />
+    <property name="Quantita4" />
+    <property name="Quantita5" />
+    <property name="Quantita6" />
+    <property name="Quantita7" />
+    <property name="Quantita8" />
+    <property name="Quantita9" />
+    <property name="Quantita10" />
+    <property name="Quantita11" />
+    <property name="Quantita12" />
+    <property name="Quantita13" />
+    <property name="Quantita14" />
+    <property name="Quantita15" />
+    <property name="Quantita16" />
+    <property name="Quantita17" />
+    <property name="Quantita18" />
+    <property name="Quantita19" />
+    <property name="Quantita20" />
+    <property name="Quantita21" />
+    <property name="Quantita22" />
+    <property name="Quantita23" />
+    <property name="Quantita24" />
+    <property name="Quantita25" />
+    <property name="Quantita26" />
+    <property name="Quantita27" />
+    <property name="Quantita28" />
+    <property name="Quantita29" />
+    <property name="Quantita30" />
+
+    <!--
+      note
+      -->
+    <property name="nota1" />
+    <property name="nota2" />
+    <property name="nota3" />
+    <property name="nota4" />
+    <property name="nota5" />
+    <property name="nota6" />
+    <property name="nota7" />
+    <property name="nota8" />
+    <property name="nota9" />
+    <property name="nota10" />
+    <property name="nota11" />
+    <property name="nota12" />
+    <property name="nota13" />
+    <property name="nota14" />
+    <property name="nota15" />
+    <property name="nota16" />
+    <property name="nota17" />
+    <property name="nota18" />
+    <property name="nota19" />
+    <property name="nota20" />
+    <property name="nota21" />
+    <property name="nota22" />
+    <property name="nota23" />
+    <property name="nota24" />
+    <property name="nota25" />
+    <property name="nota26" />
+    <property name="nota27" />
+    <property name="nota28" />
+    <property name="nota29" />
+    <property name="nota30" />
+    <property column="inesaurimento" name="InEsaurimento" />
+    <!--
+      Imballi
+      -->
+    <bag name="Imballi" table="ArticoliImballi" lazy="true">
+      <key foreign-key="none">
+        <column name="CodiceVariante" />
+        <column name="CodiceArticolo" />
+      </key>
+      <many-to-many column="CodiceImballo" class="Imballo" foreign-key="none" />
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,1111 @@
+/*-------------------------------------------
+	EXPERTWEB - WEB MODA
+	- - - - - - - - - - - - - - - - - - - - -
+	Description:	Base setup styles
+	Filename:		site.css
+	Date:			may, 2011
+	Company:        ExpertWeb
+	Please:         You may adapt elements of this CSS in your own projects, 
+					but the unique combination of layouts, styles, sizes, typography, 
+					and positioning ("the design") is copyright @ Expertweb.it 
+					and may not be reproduced.
+	-------------------------------------------*/
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;		
+}
+
+/* Pulsante di stampa */
+input.printButton
+{
+	display: none !important;
+}
+
+/* GENERICI HTML */
+html, body {	
+	color:#333;
+	font-size: 12px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size:30px;
+}
+h2 {
+	font-size:18px;
+}
+h3 {
+	font-size:14px;
+	text-transform:uppercase;
+	margin-top:30px;
+	margin-bottom:5px
+}
+h4 {
+	font-size:16px;
+}
+h5 {
+	font-size:14px;
+}
+h6 {
+	font-size:12px;
+}
+
+a {
+	color:#09c;
+}
+a:hover {
+	color:#000;
+}
+a img {
+	border:none;
+}
+strong, b {
+	color:#000;
+}
+table {
+	border-spacing:0;
+	border-collapse:collapse;
+}
+.disp {
+	position:absolute;
+	top:-500px;
+}
+.hidn {
+	visibility: hidden;
+}
+
+/* LAYOUT **********/
+div.container, 
+div.containerHeader {
+	width:/*94%se elastico*/ 990px /*se fisso*/;
+	margin:0 auto;
+}
+section {
+	padding:10px 0 30px 0;
+	min-height:440px;
+}
+
+/* misure generiche per div */
+div.perc50 {
+	width:50%; 
+	margin:0 auto;
+}
+div.perc30 {
+	width:30%; 
+	margin:0 auto;
+}
+
+
+/* HEADER */
+header {
+	border-top: solid 9px #1a2e45; /*customize - colori cliente*/ 
+	height: 40px;
+	padding: 0 3%;
+	clear: both;
+}
+
+header h1 { /*customize - logo cliente*/ 
+	width:120px; 
+	height:30px;
+	background:url(../Images/main_logo.png) no-repeat center left;
+	float:left;
+}
+header h1 a { /*customize - logo cliente*/ 
+	display:block; 
+	height:30px;
+	text-decoration:none;
+	border:none;
+}
+header h1 a span {
+	position: absolute;
+	top: -1000px;
+}
+header div.login {
+	width:55%;
+	float:right;
+	padding-top:15px;
+	text-align:right;
+}
+
+/* MENU */
+/* il menu ha un foglio di stile apposito menu.css */
+
+/* FOOTER */
+footer{
+	clear: both;
+	padding:5px;
+	margin-bottom:20px;
+	border: 1px solid #ccc; 
+	border-radius: 3px 3px 3px 3px; 
+	background:#f9f9f9; 
+	box-shadow: 0 0 4px #ccc;
+	font-size:11px;
+	font-weight:bold;
+	color:#777;
+	text-align:right;
+}
+
+/* PAGINA LOGIN **********/
+
+div.msgHome {
+	font-size:16px;
+	margin-bottom:20px;
+}
+
+div.divLogin {
+	width:500px;
+	margin:50px auto;
+}
+div.divLogin table {
+	width:100%;
+}
+div.divLogin table.tabLogin {
+	border: 1px solid #ccc; 
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 0 4px #ccc;
+}
+table.tabLogin th {
+	padding:10px 5px 0 5px;
+	text-align:right;
+	width:100px;
+}
+table.tabLogin td {
+	padding:10px 0 0 0;
+}
+table.tabLogin tr.input2 th, 
+table.tabLogin tr.input2 td {
+	padding-bottom:10px;
+}
+table.tabLogin label {
+	font-size:16px;
+	line-height:1em;
+}
+table.tabLogin input {
+	width:90%;
+	font-size:16px;
+	padding:5px;
+	margin-right:5px;
+}
+div.bottoni {
+	text-align:center;
+	padding:10px 0;
+	display:block;
+}
+
+	
+/* PAGINE INTERNE **********/
+
+/* TABELLE LISTE DATI */
+
+table.tabellaLista {
+	width:100%;
+	border: solid 1px #ccc;
+	margin:5px 0;
+}
+table.tabellaLista tr.alternate {
+	background:#eee;
+}
+table.tabellaLista th{
+	padding:2px;
+	background:#e7edf0;
+	font-size:11px;
+	border: solid 1px #ccc;
+	height:24px;
+	font-weight:normal;
+	line-height:1.2em;
+}
+table.tabellaLista td{
+	padding:2px;
+	border: solid 1px #ccc;
+	height:24px;
+}
+
+/* misure specifiche delle singole celle */
+table.tabellaLista td.tdIcona {
+	width:40px;
+	text-align: center;
+	white-space:nowrap;
+}
+table.tabellaLista td.tdCodice {
+	width:10%;
+}
+table.tabellaLista td.tdCitta {
+	width:10%;
+}
+table.tabellaLista td.tdProvincia {
+	width:10%;
+}
+table.tabellaLista td.tdTipoAgente {
+	width:10%;
+}
+table.tabellaLista td.tdData {
+	width:15%;
+}
+table.tabellaLista td.tdCheck {
+	text-align:center;
+}
+
+
+
+/* LEGENDA ORDINI */
+table.legenda {
+	width:40%;
+	border: solid 1px #777;
+	margin-bottom:6px;
+}
+table.legenda td {
+	width:50%;
+	line-height:24px;
+	border: solid 1px #777;
+	text-align:center;
+}
+.temporaneo {
+	background:#f2eec3;
+}
+.sospeso {
+	background:#f7dbc0;
+}
+.chiuso {
+	background:#fff;
+}
+.trasmesso {
+	background:#cbf2cb;
+}
+
+
+/* PANNELLI MESSAGGI */
+div.pannelloMessaggi {
+	padding:8px 0;
+	clear:both;	
+	height:38px;	
+}
+div.pannelloMessaggi a.pulsante {
+	float: right;
+}
+div.pannelloMessaggi div.info2 {
+	float: left;
+	width:67%;
+	margin-left:40px;
+}
+
+
+/* LINK con ICONA - BOTTONI */
+div.pulsantiera {
+	padding:6px 0;
+	height:38px;
+	clear:both;		
+}
+a.pulsante{
+	background: #09c;
+	background-position: 5px 5px;
+	background-repeat:no-repeat;
+	color:#fff!important;
+	font-weight: normal;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif!important;
+	padding:10px 10px 10px 40px;
+	font-weight:bold;
+	text-transform:uppercase;
+	border: 1px solid #ccc;
+	border-radius: 5px 5px 5px 5px;
+	display:block; 
+	text-decoration:none;
+	width:20%;
+	float:left;
+	margin-right:10px;
+}
+a.pulsante:hover {
+	border: 1px solid #07d9ff;
+	color: #70e8fe;
+}
+a.pulsante.linkTorna {
+	background-image: url(../Images/list.png);
+}
+a.pulsante.linkInsNuovo {
+	background-image: url(../Images/row_add.png);
+}
+a.pulsante.linkInsAgente {
+	background-image: url(../Images/agent-add.png);
+}
+a.pulsante.linkEliminaOrdine {
+	background: url(../Images/delete.png) no-repeat 5px 5px #e74f13;
+}
+a.pulsante.linkChiudiOrdine {
+	background-image: url(../Images/Checkout.png);
+	float:right;
+	margin-right:0;
+}
+
+div.sospendiOrdine {
+	width:10%;
+	float:right;
+	display: block;
+	font-weight:bold;
+	padding-top:10px;
+}
+
+.warning.withButton {
+	min-height: 40px;
+}
+.warning.withButton p{
+	float:left;
+	width:72%;
+}
+.warning.withButton a.pulsante{
+	float:right;
+}
+
+/* PAGINATORE */
+.paginatore table {
+	border:none!important;
+}
+.paginatore td {
+	border:none!important;
+	font-size:18px;
+}
+.paginatore td a {
+	padding:4px;
+}
+
+/* ELEMENTI FORM GENERICI */
+label,
+label span{
+	font-size:11px;
+}
+
+span[style="display: inline;"] + input,
+span[style="display: inline;"] + select,
+span[style="display: inline;"] + span + input,
+span[style="display: inline;"] + span + span + input,
+.inputError
+{
+	background-color: #F2E3D7;
+    border: solid 1px #f00;
+}
+
+input[type=text],
+input[type=password] {	
+	border: 1px solid #ccc; 
+	border-radius: 3px 3px 3px 3px;
+	padding:3px;
+	
+}
+select,
+textarea {	
+	border: 1px solid #ccc; 
+	border-radius: 3px 3px 3px 3px;
+	padding:2px;
+}
+
+input[type=submit],
+input[type=button],
+.button {
+	text-transform: uppercase;
+	border-radius: 5px 5px 5px 5px;	
+	background: url(../Images/bg_button.png) repeat-x 0 0;
+    border: solid 1px #ccc;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    overflow: visible;
+    padding: 0 15px;
+    text-align: center;
+	color:#fff;
+	font-size:11px!important;
+	font-family:Arial, Helvetica, sans-serif!important;
+	margin-top:12px;
+}
+input[type=submit]:hover,
+input[type=button]:hover,
+button:hover {
+	background-position: 0 -28px;
+    border: solid 1px #000;
+}
+input.add,
+input.subtract {
+	font-size:12px!important;
+	font-weight:bold!important;
+    height: 18px;
+	width:18px;
+    line-height: 0px;
+    padding: 3px!important;
+	margin:2px 1px;
+	float:left;
+	border-radius:1px!important;
+	font-family:Verdana, Arial, Helvetica, sans-serif!important;
+}
+td.tdBottoni input.copy,
+td.tdBottoni input.paste {
+	padding:0 4px;
+	width:100%;
+	margin-top:5px;
+	font-size:11px;
+}
+
+table.tabellaTaglie input[type=text] {
+	width:50%;
+}
+
+
+input[type=checkbox] {
+	margin-right:5px;
+}
+fieldset {
+	border:none;
+}
+legend {
+	font-size: 11px;
+	text-transform:uppercase;
+	padding:2px 0 8px 13px;
+	font-weight:bold;
+	background: url(../Images/ico_legend.png) no-repeat top left;
+	margin-left: -2px;
+}
+
+/* MESSAGGI */
+.validation-error {/*errori generici nei form*/
+	color:#f00;
+	font-weight: bold;
+}
+.validation-error.blockMessage {/*errori generici nei form che devono andare a capo*/
+	display:block;
+	clear:both;
+	font-size:16px;
+	border: 1px solid #f00; 
+	border-radius: 3px 3px 3px 3px;
+	padding:12px 8px 12px 50px;
+	margin:10px 0;
+	background:url(../Images/led_red.png) no-repeat 5px 5px #f2e3d7;
+}
+
+.error {
+	font-size:14px;
+	font-weight:bold;
+	color:#f00;
+	border: 1px solid #f00; 
+	border-radius: 3px 3px 3px 3px;
+	padding:10px 8px 10px 35px;
+	line-height:1.2em;
+	margin:10px 0;
+	background:url(../Images/led_red.png) no-repeat 5px 5px #f2e3d7;	
+}
+span.error {
+	display:block;
+}
+.warning {
+	font-size:14px;
+	font-weight:bold;
+	color:#c29b00;
+	border: 1px solid #c29b00; 
+	border-radius: 3px 3px 3px 3px;
+	padding:10px 8px 10px 35px;
+	line-height:1.2em;
+	margin:10px 0;
+	background:url(../Images/led_yellow.png) no-repeat 5px 5px #f2eec3;	
+}
+
+.success {
+	font-size:14px;
+	font-weight:bold;
+	color:#1d8801;
+	border: 1px solid #1d8801; 
+	border-radius: 3px 3px 3px 3px;
+	padding:10px 8px 10px 35px;
+	line-height:1.2em;
+	margin:10px 0;
+	background:url(../Images/led_green.png) no-repeat 5px 5px #e0f6da;	
+}
+
+.info {
+	font-size:12px;
+	font-weight:bold;
+	color:#333;
+	border: 1px solid #09c; 
+	border-radius: 3px 3px 3px 3px;
+	padding:10px 8px 10px 35px;
+	line-height:1.2em;
+	margin:10px 0;
+	background:url(../Images/message.png) no-repeat 5px 5px #ebebeb;	
+}
+div.validationSummary {
+	font-size:14px;
+	font-weight:bold;
+	color:#f00;
+	border: 1px solid #f00; 
+	border-radius: 3px 3px 3px 3px;
+	padding:10px 8px 10px 35px;
+	line-height:1.2em;
+	margin:10px 0;
+	background:url(../Images/led_red.png) no-repeat 5px 5px #f2e3d7;	
+}
+div.validationSummary ul {
+	font-size:12px;
+}
+
+/* FIELD DI INSERIMENTO DATI */
+div.divField {
+	margin:15px 0;
+	padding:2px 6px 6px 6px;
+	background: url(../Images/bg_divField.png) repeat-x top left #fbfbfb;
+	border: solid 1px #ccc;	
+	border-radius: 3px 3px 3px 3px; 
+}
+div.divField div {
+	width:23%;
+	margin: 0 1% 5px 1%;
+	float:left;
+}
+div.divField label {
+	font-size:11px;
+}
+div.divField div.perc20 {
+	width:18%;
+}
+div.divField div.perc50 {
+	width:48%;
+}
+div.divField div.perc70 {
+	width:68%;
+}
+div.divField div.perc98 {
+	width:97%;
+}
+div.divField div.perc100 {
+	width:100%;
+	margin: 0 0 5px 0;
+}
+
+
+div.divField div.literal {
+	border-bottom: dotted 2px #09c;
+	padding-bottom:3px;
+}
+
+div.divField div input[type=text] {
+	width:98%;
+}
+div.divField div select,
+div.divField div textarea {
+	width:100%;
+}
+div.divField div input[type=button],
+div.divField div input[type=submit] {
+	margin-top:12px;
+}
+
+input.quantity {
+	width:85%;
+	float: none;
+	margin-right:0;
+}
+
+/* FIELD DI RICERCA */
+div.divFieldRicerca {
+	background: #dde6eb;	
+	border: solid 1px #09c;	
+	color: #000;
+	font-weight:bold;
+}
+div.divFieldRicerca legend {
+	color:#069;
+}
+
+div.apriChiudi {
+	text-align:right;
+}
+a.mostraNascondiFiltri{
+	padding:5px 30px 5px 0;
+	margin:10px 0 3px 0;
+	fl oat:left;
+}
+a.nascondiFiltri{
+	background: url(../Images/arrow_up.png) no-repeat top right;
+}
+a.mostraFiltri{
+	background: url(../Images/arrow_down.png) no-repeat top right;
+}
+
+/* field di inserimento/ricerca specifici */
+
+div.divField div.listaIndirizzi {
+	border-top: dotted 2px #69c;
+	width:98%;
+	margin:0 0 0 1%;
+}
+div.divField div.singoloIndirizzo {
+	width:100%;
+	clear:both;
+	border-bottom: dotted 1px #444;
+	padding-bottom:3px;
+	margin:0;
+}
+div.divField div.singoloIndirizzo input{
+	float:right;
+}
+div.divField div.singoloIndirizzo p{
+	float:left;
+	width:80%;
+	margin:15px 0 0 0;
+	font-size:16px;
+}
+div.fieldCheckPredefinito {
+	padding-top:20px;
+}
+
+div.gruppoField {
+	border: solid 1px #09c;
+	padding-left:3px;
+	background:#c0d1db;
+}
+
+div.divField div.impostazioniStaticheOrdine {
+	font-size:11px;
+	font-weight:normal;
+	border: solid 1px #09c;
+	padding:4px 0;
+	background:#e7edf0;
+}
+div.divField div.impostazioniStaticheOrdine div{
+	float:none; 
+	width:auto;
+}
+
+div.divField  div.filtriOrdine {
+	width:48%;
+	
+}
+div.divField  div.filtriOrdine div div {
+	width:31%;
+	margin-bottom:0!important;
+	font-size:11px!important;
+}
+div.divField  div.dateConsegna {
+	width:23%;
+	font-size:11px;
+	float:right;
+	background:#c0d1db;
+	padding:7px 0;
+	border: solid 1px #09c;
+	margin-right: 1%;
+	margin-left:0;
+}
+div.dateConsegna legend {
+	display:none;
+}
+div.dateConsegna div{
+	width:auto;
+	padding-left:3px;
+	float:none;margin-bottom:0!important;
+	height:20px;
+}
+div.dateConsegna label {
+	font-size:10px;
+	line-height:1em;
+	width:59%!important; 
+	float: left;	
+	overflow:hidden;
+	display:block;
+	padding:0!important;
+	margin-top:8px;
+	text-align:right;
+	font-weight:normal;
+}
+div.dateConsegna input {
+	width:32%!important; 
+	float: right;
+	font-size:10px;	
+}
+
+p.testoXS {
+	clear:both;
+	font-size:11px;
+	line-height:1em;
+	margin-top:3px;
+}
+div.fieldCodiceArticolo {
+	width:96%!important;
+}
+
+/* nasconde il bottone per la ricerca per codice */
+.cercaPerCodice
+{
+	display: none !important;
+}
+
+div.checkQuantZero {
+	width:96%!important;
+}
+div.checkQuantZero label{
+	font-size:9px!important;
+}
+div.inserisciLogo {
+	margin-right:0!important;
+	width:49%!important;
+}
+
+div.imgLogo {
+	width:98%!important;
+	padding:12px 0;
+	overflow: hidden;
+	border: solid 1px #ccc;
+	text-align:center;
+	margin-right:0;
+}
+
+.imglogo 
+{
+	max-width: 450px;
+}
+
+div.ricercaInsArticolo {
+	height:200px;
+}
+div.divFieldRicerca.articoli {
+	width:23%;
+	margin:0;
+	float:left;
+	height:192px;
+}
+/* TODO: */
+/*div.nessunArticoloTrovato{
+	width:23%;
+	margin:0;
+	float:left;
+	height:172px;
+	padding:0;
+}*/
+div.nessunArticoloTrovato p.warning{
+	margin:0;
+}
+
+div.fieldAttivo {
+	padding-top:17px;
+}
+/*
+div.fieldTipoAgente {
+	padding-top:5px;
+}*/
+div.fieldTipoAgente span{
+	font-size:11px;
+}
+div.tabTipoAgente {
+	width:70%!important;
+}
+div.tabTipoAgente table{
+	width:100%;
+}
+div.tabTipoAgente td{
+	width:20%;
+	border: solid 1px #ccc;
+	padding:3px;
+}
+div.tabTipoAgente input[type=radio]{
+	margin-right:5px;
+}
+div.fieldSospensione input{
+	float:left;
+}
+div.fieldSospensione label{
+	float:left;
+	margin:5px 0 0 5px;
+}
+/* GALLERIA */
+div.immaginiPanel {
+	padding:10px 0;
+	overflow: auto;
+	background:#ebebeb;
+	border-radius: 3px 3px 3px 3px;
+	margin-bottom:20px;
+	height:180px;
+	width:74%; 
+	float:right;
+	border: solid 1px #ccc;
+}
+
+.mostraNascondiImmagini 
+{
+	margin: -8px 0 10px 10px;
+}
+.mostraNascondiImmagini a
+{
+	font-size:11px;
+	padding: 3px 0 3px 20px;	
+	font-weight: bold;
+}
+
+.mostraNascondiImmagini a.mostra 
+{
+	background: url(../Images/mostraImg.png) no-repeat left 3px;	
+}
+.mostraNascondiImmagini a.nascondi
+{
+	background: url(../Images/nascondiImg.png) no-repeat left 3px;
+}
+
+
+div.immaginiPanel ul {
+	overflow: hidden; 
+	white-space: nowrap;
+	width: 2000px;
+}
+div.immaginiPanel li {
+	float: left;
+	margin-left: 10px;
+	list-style:none;
+	height: 140px; 
+	overflow: hidden;
+}
+div.immaginiPanel li a.immagineArticolo {
+	display:block;
+	background:#fff;
+	border: solid 2px #ccc;
+	border-radius: 3px 3px 3px 3px;
+	padding:5px;
+	height:100px;
+	min-width:80px;
+	text-align:center;
+}
+div.immaginiPanel li a.immagineArticolo:hover,
+div.immaginiPanel li a.immagineArticolo.selected{
+	display:block;
+	border: solid 2px #69c;
+	padding:5px;
+}
+
+div.immaginiPanel li a.zoomArticolo {
+	display:block;
+	background: url(../Images/zoom.png) no-repeat center right #dde6eb;
+	margin-top:2px;
+	text-decoration:none;
+	padding:3px;
+	font-size:.9em;
+	text-transform:uppercase;
+	border: solid 1px #69c;
+	border-radius: 3px 3px 3px 3px;
+	font-weight:bold;
+}
+div.immaginiPanel img {
+	max-height:100px;
+}
+
+div.immaginiPanel p.warning{
+	margin: 10px;
+}
+
+/* TABELLA PREZZI ORDINE */
+div.tabellaPrezziMsg {
+	clear:both;
+	width:100%!important;
+	min-height:40px;
+	overflow: hidden; /* float fix */
+}
+div.msgOrdineMin {
+	width:46%;
+	float:right;
+	margin:0px;
+}
+table.tabellaPrezzi {
+	width:48%;
+	float:left;
+}
+table.tabellaPrezzi th {
+	width:33%;
+	border: solid 1px #ccc;
+	background:#e7edf0;
+	font-size:11px;
+}
+table.tabellaPrezzi td {
+	width:33%;
+	border: solid 1px #ccc;
+	padding:2px;
+	text-align:center;
+}
+
+/* RIEPLOGO */
+
+table.riepilogo {
+	text-align:center;
+}
+td.numValuta {
+	text-align:right;
+}
+.totale,
+.sconto,
+.totaleNetto,
+.markupMedio {
+	font-weight:bold;
+	text-align:right;
+}
+.totale,
+.totaleNetto {
+	background:#ebebeb;
+}
+
+div.infoRiepilogo {
+	border: solid 1px #09c;
+	padding:8px;
+	background:#e7edf0;
+	margin:8px 0;	
+}
+div.infoRiepilogo span{
+	font-weight: bold;
+}
+div.infoRiepilogo p{
+	border-bottom: dotted 2px #09c;
+	margin-bottom:5px;
+}
+
+
+/* AGENTI */
+div.tabImpostazioni h3 {
+	height:22px;
+	font-size: 11px;
+	text-transform:uppercase;
+	padding:2px 0 8px 13px;
+	font-weight:bold;
+	background: url(../Images/ico_legend.png) no-repeat top left;
+	margin-left: -2px;
+}
+div.divField div.impStagioni {
+	margin-left:0;
+	width:33%;
+}
+div.divField div.impListini {
+	width:18%;
+}
+div.divField div.impValute {
+	width:18%;
+}
+div.divField div.impPagamenti {
+	margin-right:0;
+	width:25%;
+}
+
+/*
+ * Prezzi Acquisto e consigliati
+ */
+
+.prezzoAcquisto1
+{
+	background-color: #f6f8bc; /* giallo panna */
+}
+
+.prezzoAcquisto2
+{
+	background-color: #dacaf8; /* violetto */
+}
+
+.prezzoAcquisto3 
+{
+	background-color: #cce9f7; /* azzurrino */
+}
+
+.prezzoAcquisto4 
+{
+	background-color: #d7f8bc; /* verde lime */
+}
+
+.prezzoAcquisto5 
+{
+	background-color: #ffe9ba; /* arancione chiaro */
+}
+
+.prezzoConsigliato1
+{
+	background-color: #d7f8bc; /* verde lime */
+}
+
+.prezzoConsigliato2
+{
+	background-color: #a4e271; /* verde */
+}
+
+.prezzoConsigliato3
+{
+	background-color: #91ce5c; /* verde scuro */
+}
+
+
+/* PAGINA STAMPA */
+div.paginaStampa {
+	margin:20px;
+	text-align:center;
+}
+
+div.paginaStampa h2 {
+	border-bottom: dotted 2px #09c;
+	margin-bottom:20px;	
+	padding-bottom:10px;
+}
+div.nascondiImporti {
+	border-bottom: dotted 2px #09c;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	text-align:center;	
+}
+div.bottoneStampa {
+	width:80px;
+	margin: 20px auto;
+}
+
+
+
+/* PAGINA DA STAMPARE */
+
+div.paginaInStampa {
+	wid th:100%;
+	bor der: solid 10px #f00;
+	}
+
+div.paginaInStampa table {
+	border: solid 1px #ccc;
+	border-collapse: collapse;
+	width:100%;
+	margin:20px 0;
+}
+div.paginaInStampa td {
+	border: solid 1px #ccc;
+	border-collapse: collapse;
+	padding:2px 4px
+}
+
+table.headerStampa {	
+	margin-bottom:20px;
+}
+table.headerStampa td {
+}
+
+td.logoDitta {
+	width:150px;
+}
+td.logoDitta img {
+	width:150px;
+}
+td.infoDitta {
+	text-align: left;
+	font-size:9px;
+}
+td.infoDitta p {
+	margin:0!important; 
+	padding:0!important;
+	line-height:1em!important;
+}
+
+table.infoOrdine td {
+	vertical-align: top;
+}
+table.infoOrdine td span {
+	font-weight:bold;
+	text-transform:	uppercase;
+	display:block;
+}
+table.dateConsegna td {
+	text-align: center;
+}
+
+table.footer td {
+	vertical-align: top;
+}

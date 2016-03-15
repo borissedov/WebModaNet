@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="PoliticaSconti" table="PoliticheSconti">
+    <id name="Id" column="ID">
+      <generator class="identity" />
+    </id>
+    <property name="Codice" length="6" />
+    <property name="Criterio" />
+    <property name="DataDecorrenza" />
+    <property name="Priorita" />
+    
+    <!--
+      Flag
+      -->
+    <property name="FlagCodiceArticolo" />
+    <property name="FlagCodiceFamiglia" />
+    <property name="FlagCodiceMarchio" />
+    <property name="FlagCodiceListino" />
+    <property name="FlagCodiceTipologiaCommerciale" />
+    <property name="FlagCodiceCliente" />
+    <property name="FlagCodiceCategoriaCliente" />
+    <property name="FlagCodiceZona" />
+    <property name="FlagCodiceMetodoPagamento" />
+    <property name="FlagCodiceClasseMerceologica" />
+    <property name="FlagCodiceClasseLogistica" />
+  </class>
+</hibernate-mapping>

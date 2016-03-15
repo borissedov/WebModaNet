@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="EW.WebModaNetClassLibrary" namespace="EW.WebModaNetClassLibrary.Entities">
+  <class name="CodiceABarre" table="CodiciABarre">
+    <id name="Codice" length="30">
+      <generator class="assigned" />
+    </id>
+    <many-to-one name="Variante" column="CodiceVariante" not-null="true" foreign-key="none">
+      <column name="CodiceVariante" />
+      <column name="CodiceArticolo" />
+    </many-to-one>
+    <property name="Taglia" length="6" />
+  </class>
+</hibernate-mapping>
